@@ -26,8 +26,13 @@ set incsearch
 " 行番号を表示する
 " 逆は [ set nonumber ]
 set number
+" カーソルが何行目の何列目に置かれているかを表示する 
+" 逆は [ set noruler ]
+set ruler
 " 改行 ( $ ) やタブ ( ^I ) を可視化する
-"set list
+set list
+"set listchars=tab:>-,trail:>,eol:$ "改行を表示する場合
+set listchars=tab:>-,trail:~
 " 括弧入力時に対応する括弧を強調する
 set showmatch
 "挿入モード時、ステータスラインの色を変更
@@ -45,3 +50,17 @@ let g:molokai_original = 1
 set t_Co=256
 colorscheme molokai
 
+"全角スペースをハイライト表示
+function! ZenkakuSpace()
+    highlight ZenkakuSpace cterm=reverse ctermfg=6 gui=reverse guifg=6
+endfunction
+   
+if has('syntax')
+    augroup ZenkakuSpace
+        autocmd!
+        autocmd ColorScheme       * call ZenkakuSpace()
+        autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+    augroup END
+    call ZenkakuSpace()
+endif
+highlight SpecialKey ctermfg=6
