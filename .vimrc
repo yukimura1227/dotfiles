@@ -20,6 +20,8 @@ set smartcase
 " 検索語にマッチした単語をハイライトする
 " 逆は [ set nohlsearch ]
 set hlsearch
+" /を二回押下でハイライトを解除
+nnoremap // :nohlsearch<CR>
 " インクリメンタルサーチを使う ( 検索語を入れている途中から随時マッチする文字列の検索を開始)
 " 逆は [ set noincsearch ]
 set incsearch
