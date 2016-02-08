@@ -37,6 +37,8 @@ set list
 set listchars=tab:>-,trail:~
 " 括弧入力時に対応する括弧を強調する
 set showmatch
+" カーソル行の背景色変更
+set cursorline
 "挿入モード時、ステータスラインの色を変更
 let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
 " 構文ごとに色分け表示する
