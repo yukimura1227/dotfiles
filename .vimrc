@@ -21,6 +21,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 " ...省略
 NeoBundle 'scrooloose/nerdtree'
+" 自動的に閉じ括弧を挿入してくれるプラグイン
+NeoBundle 'Townk/vim-autoclose'
 
 call neobundle#end()
 
