@@ -23,6 +23,8 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 " 自動的に閉じ括弧を挿入してくれるプラグイン
 NeoBundle 'Townk/vim-autoclose'
+" grepを可能にするプラグイン
+NeoBundle 'grep.vim'
 
 call neobundle#end()
 
