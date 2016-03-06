@@ -48,6 +48,8 @@ set encoding=utf-8
 set fileencodings=utf-8
 " 自動認識させる改行コードを指定する
 set fileformats=unix
+" 常にステータスラインを表示する
+set laststatus=2
 " バックアップをとる
 " 逆は [ set nobackup ]
 set backup
@@ -102,7 +104,7 @@ colorscheme molokai
 function! ZenkakuSpace()
     highlight ZenkakuSpace cterm=reverse ctermfg=6 gui=reverse guifg=6
 endfunction
-   
+
 if has('syntax')
     augroup ZenkakuSpace
         autocmd!
