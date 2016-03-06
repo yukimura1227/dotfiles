@@ -25,6 +25,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Townk/vim-autoclose'
 " grepを可能にするプラグイン
 NeoBundle 'grep.vim'
+" Ruby向けにendを自動挿入してくれるプラグイン
+NeoBundle 'tpope/vim-endwise'
 
 call neobundle#end()
 
