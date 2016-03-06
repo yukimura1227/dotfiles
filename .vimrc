@@ -29,6 +29,8 @@ NeoBundle 'grep.vim'
 NeoBundle 'tpope/vim-endwise'
 " Gitを便利に使うプラグイン
 NeoBundle 'tpope/vim-fugitive'
+" ステータスラインをいい感じにしてくれるプラグイン
+NeoBundle 'itchyny/lightline.vim'
 
 call neobundle#end()
 
@@ -114,3 +116,48 @@ if has('syntax')
     call ZenkakuSpace()
 endif
 highlight SpecialKey ctermfg=6
+
+
+""""""""""""""""""""""""""
+"lightline.vimの設定
+let g:lightline = {
+  \ 'colorscheme': 'powerline',
+  \ 'active': {
+  \   'left': [ ['fugitive', 'filename'] ]
+  \ },
+  \ 'component': {
+  \   'lineinfo': ' %3l:%-2v',
+  \ },
+  \ 'component_function': {
+  \   'readonly': 'MyReadonly',
+  \   'fugitive': 'MyFugitive',
+  \   'filename': 'MyFilename',
+  \ }
+\ }
+
+function! MyFilename()
+  return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() :
+        \  &ft == 'unite' ? unite#get_status_string() :
+        \  &ft == 'vimshell' ? vimshell#get_status_string() :
+        \ '' != expand('%:t') ? expand('%:t') : '[No Name]') 
+endfunction
+
+function! MyReadonly()
+  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? 'read-only ' : ''
+endfunction
+
+function! MyFugitive()
+  try
+    if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head') && strlen(fugitive#head())
+      return '[' . fugitive#head() . ']'
+    endif
+  catch
+  endtry
+  return ''
+endfunction
+
+if has('unix') && !has('gui_running')
+  inoremap <silent> <Esc> <Esc>
+  inoremap <silent> <C-[> <Esc>
+endif
