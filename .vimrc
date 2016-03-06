@@ -27,6 +27,8 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'grep.vim'
 " Ruby向けにendを自動挿入してくれるプラグイン
 NeoBundle 'tpope/vim-endwise'
+" Gitを便利に使うプラグイン
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
