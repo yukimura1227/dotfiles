@@ -72,6 +72,8 @@ set listchars=tab:>-,trail:~
 set showmatch
 " カーソル行の背景色変更
 set cursorline
+" ヤンクしたデータをクリップボードで使用＆選択範囲自動コピー
+set clipboard=unnamed,autoselect
 "挿入モード時、ステータスラインの色を変更
 let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
 " 構文ごとに色分け表示する
