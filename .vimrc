@@ -20,6 +20,7 @@ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
 " ...省略
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
