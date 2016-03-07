@@ -33,6 +33,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'itchyny/lightline.vim'
 " coffee scriptをいい感じに編集できるプラグイン"
 NeoBundle 'kchmck/vim-coffee-script'
+" インデントに色を付けて見やすくする
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
@@ -95,6 +97,14 @@ let NERDTreeShowHidden = 1
 autocmd VimEnter * execute 'NERDTree'
 " cofee scriptのファイルタイプのマッピング
 autocmd BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+" vim-indent-guidesの設定
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
+let g:indent_guides_color_change_percent = 30
+let g:indent_guides_guide_size = 1
 "挿入モード時、ステータスラインの色を変更
 let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
 " 構文ごとに色分け表示する
