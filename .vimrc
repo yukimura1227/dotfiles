@@ -122,7 +122,7 @@ colorscheme molokai
 
 "全角スペースをハイライト表示
 function! ZenkakuSpace()
-    highlight ZenkakuSpace cterm=reverse ctermfg=6 gui=reverse guifg=6
+    highlight ZenkakuSpace cterm=reverse ctermfg=LightCyan gui=reverse guifg=LightCyan
 endfunction
 
 if has('syntax')
@@ -133,7 +133,7 @@ if has('syntax')
     augroup END
     call ZenkakuSpace()
 endif
-highlight SpecialKey ctermfg=6
+highlight SpecialKey ctermfg=LightCyan
 
 
 """"""""""""""""""""""""""
