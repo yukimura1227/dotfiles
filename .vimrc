@@ -19,8 +19,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
-" ...省略
-NeoBundle 'scrooloose/nerdtree'
+" ファイラー
+NeoBundle 'Shougo/vimfiler'
 " 自動的に閉じ括弧を挿入してくれるプラグイン
 NeoBundle 'Townk/vim-autoclose'
 " grepを可能にするプラグイン
@@ -91,10 +91,10 @@ set showmatch
 set cursorline
 " ヤンクしたデータをクリップボードで使用＆選択範囲自動コピー
 set clipboard=unnamed,autoselect
-" 隠しファイルをデフォルトで表示させる
-let NERDTreeShowHidden = 1
 " デフォルトでツリーを表示させる
-autocmd VimEnter * execute 'NERDTree'
+autocmd VimEnter * execute 'VimFilerExplore'
+" vimFilerでファイルを開いた場合は、別タブで開くように設定
+let g:vimfiler_edit_action = 'tabopen'
 " cofee scriptのファイルタイプのマッピング
 autocmd BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 " vim-indent-guidesの設定
