@@ -36,6 +36,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
+" コード補完
+NeoBundle 'Shougo/neocomplete.vim'
+
 call neobundle#end()
 
 " Required:
@@ -45,6 +48,17 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 """"""""""""""""""""""""""""""
+
+" neocompleteの設定
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_ignore_case = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_auto_select = 1
+let g:neocomplete#enable_enable_camel_case_completion = 0
+if !exists('g:neocomplete#keyword_patterns')
+  let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns._ = '\h\w*'
 
 " vim の独自拡張機能を使う(viとの互換性をとらない)
 set nocompatible
