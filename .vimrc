@@ -38,6 +38,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " コード補完
 NeoBundle 'Shougo/neocomplete.vim'
+" ヤンクのヒストリーを管理できるプラグイン
+NeoBundle 'Shougo/neoyank.vim'
 
 call neobundle#end()
 
