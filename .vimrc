@@ -70,6 +70,14 @@ set encoding=utf-8
 set fileencodings=utf-8
 " 自動認識させる改行コードを指定する
 set fileformats=unix
+" \tの見た目の幅を指定する
+set tabstop=2
+" vimで自動的に設定されるインデントの幅を指定する
+set shiftwidth=2
+" タブ入力時は空白に展開する 逆はnoexpandtab
+set expandtab
+" タブを入力して空白スペースにする場合のサイズを指定(noexpandtabの場合は無関係な設定)
+set softtabstop=2
 " 常にステータスラインを表示する
 set laststatus=2
 " バックアップをとる
