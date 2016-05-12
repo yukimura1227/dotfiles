@@ -40,6 +40,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/neocomplete.vim'
 " ヤンクのヒストリーを管理できるプラグイン
 NeoBundle 'Shougo/neoyank.vim'
+" 文字列を何かでくくったり解除したりするプラグイン
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 
