@@ -165,12 +165,15 @@ highlight SpecialKey ctermfg=LightCyan
 """"""""""""""""""""""""""
 "lightline.vimの設定
 let g:lightline = {
-  \ 'colorscheme': 'powerline',
+  \ 'colorscheme': 'wombat',
   \ 'active': {
   \   'left': [ ['fugitive', 'filename'] ]
   \ },
+  \ 'inactive': {
+  \   'left': [ ['filename', 'inactive-line'] ]
+  \ },
   \ 'component': {
-  \   'lineinfo': ' %3l:%-2v',
+  \   'inactive-line': '##################################################'
   \ },
   \ 'component_function': {
   \   'readonly': 'MyReadonly',
