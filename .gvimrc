@@ -1,0 +1,2 @@
+set imdisable
+colorscheme molokai
