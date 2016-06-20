@@ -244,6 +244,18 @@ nnoremap <silent> [unite]bm :<C-u>Unite bookmark<CR>
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "ヒストリ/ヤンクを表示
 nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
+"Uniterails/controllerを実行
+nnoremap <silent> [unite]Rc :<C-u>Unite<Space>rails/controller<CR>
+"Uniterails/modelを実行
+nnoremap <silent> [unite]Rm :<C-u>Unite<Space>rails/model<CR>
+"Uniterails/viewを実行
+nnoremap <silent> [unite]Rv :<C-u>Unite<Space>rails/view<CR>
+"Uniterails/javascriptを実行
+nnoremap <silent> [unite]Rjs :<C-u>Unite<Space>rails/javascript<CR>
+"Uniterails/stylesheetを実行
+nnoremap <silent> [unite]Rcss :<C-u>Unite<Space>rails/stylesheet<CR>
+"Uniterails/assetを実行
+nnoremap <silent> [unite]Ra :<C-u>Unite<Space>rails/asset<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
