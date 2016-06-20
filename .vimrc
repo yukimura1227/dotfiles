@@ -19,6 +19,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
+" Uniteからrailsプロジェクトの移動を簡単にできるようにする
+NeoBundle 'basyura/unite-rails'
 " ファイラー
 NeoBundle 'Shougo/vimfiler'
 " 自動的に閉じ括弧を挿入してくれるプラグイン
