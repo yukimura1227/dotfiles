@@ -44,6 +44,9 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neoyank.vim'
 " 文字列を何かでくくったり解除したりするプラグイン
 NeoBundle 'tpope/vim-surround'
+" rubocop自動実行プラグイン
+NeoBundle 'ngmy/vim-rubocop'
+NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
@@ -275,3 +278,7 @@ function! s:unite_my_settings()"{{{
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
+
+" rubocupの自動実行の設定
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers=['rubocop', 'mri']
