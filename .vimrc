@@ -264,8 +264,9 @@ autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
   "ESCでuniteを終了
   nmap <buffer> <ESC> <Plug>(unite_exit)
-  "入力モードのときjjでノーマルモードに移動
+  "入力モードのときjj,kkでノーマルモードに移動
   imap <buffer> jj <Plug>(unite_insert_leave)
+  imap <buffer> kk <Plug>(unite_insert_leave)
   "入力モードのときctrl+wでバックスラッシュも削除
   imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
   "ctrl+jで縦に分割して開く
