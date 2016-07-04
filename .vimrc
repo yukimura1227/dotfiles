@@ -218,6 +218,7 @@ endif
 "unite prefix key.
 nnoremap [unite] <Nop>
 nmap <Space>u [unite]
+nmap <Space>R [unite_rails]
 
 "unite general settings
 "インサートモードで開始
@@ -248,17 +249,17 @@ nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "ヒストリ/ヤンクを表示
 nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
 "Uniterails/controllerを実行
-nnoremap <silent> [unite]Rc :<C-u>Unite<Space>rails/controller<CR>
+nnoremap <silent> [unite_rails]c :<C-u>Unite<Space>rails/controller<CR>
 "Uniterails/modelを実行
-nnoremap <silent> [unite]Rm :<C-u>Unite<Space>rails/model<CR>
+nnoremap <silent> [unite_rails]m :<C-u>Unite<Space>rails/model<CR>
 "Uniterails/viewを実行
-nnoremap <silent> [unite]Rv :<C-u>Unite<Space>rails/view<CR>
+nnoremap <silent> [unite_rails]v :<C-u>Unite<Space>rails/view<CR>
 "Uniterails/javascriptを実行
-nnoremap <silent> [unite]Rjs :<C-u>Unite<Space>rails/javascript<CR>
+nnoremap <silent> [unite_rails]js :<C-u>Unite<Space>rails/javascript<CR>
 "Uniterails/stylesheetを実行
-nnoremap <silent> [unite]Rcss :<C-u>Unite<Space>rails/stylesheet<CR>
+nnoremap <silent> [unite_rails]css :<C-u>Unite<Space>rails/stylesheet<CR>
 "Uniterails/assetを実行
-nnoremap <silent> [unite]Ra :<C-u>Unite<Space>rails/asset<CR>
+nnoremap <silent> [unite_rails]a :<C-u>Unite<Space>rails/asset<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
