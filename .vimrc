@@ -245,7 +245,7 @@ nnoremap <silent> [screen_control]o :<C-u>tabo<CR>
 "unite prefix key.
 nnoremap [unite] <Nop>
 nmap <Space>u [unite]
-nmap <Space>R [unite_rails]
+nmap <Space>r [unite_rails]
 
 "unite general settings
 "インサートモードで開始
@@ -289,6 +289,10 @@ nnoremap <silent> [unite_rails]css :<C-u>Unite<Space>rails/stylesheet<CR>
 nnoremap <silent> [unite_rails]a :<C-u>Unite<Space>rails/asset<CR>
 "Uniterails/specを実行
 nnoremap <silent> [unite_rails]s :<C-u>Unite<Space>rails/spec<CR>
+"Unite rails/libを実行
+nnoremap <silent> [unite_rails]l :<C-u>Unite<Space>rails/lib<CR>
+"Unite rails/helperを実行
+nnoremap <silent> [unite_rails]h :<C-u>Unite<Space>rails/helper<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
