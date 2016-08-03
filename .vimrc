@@ -293,6 +293,8 @@ nnoremap <silent> [unite_rails]s :<C-u>Unite<Space>rails/spec<CR>
 nnoremap <silent> [unite_rails]l :<C-u>Unite<Space>rails/lib<CR>
 "Unite rails/helperを実行
 nnoremap <silent> [unite_rails]h :<C-u>Unite<Space>rails/helper<CR>
+"Unite rails/configを実行
+nnoremap <silent> [unite_rails]conf :<C-u>Unite<Space>rails/config<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
