@@ -276,9 +276,11 @@ nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "ヒストリ/ヤンクを表示
 nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
 "Uniterails/controllerを実行
-nnoremap <silent> [unite_rails]c :<C-u>Unite<Space>rails/controller<CR>
+nnoremap <silent> [unite_rails]cont :<C-u>Unite<Space>rails/controller<CR>
 "Uniterails/modelを実行
-nnoremap <silent> [unite_rails]m :<C-u>Unite<Space>rails/model<CR>
+nnoremap <silent> [unite_rails]mo :<C-u>Unite<Space>rails/model<CR>
+"Uniterails/mailerを実行
+nnoremap <silent> [unite_rails]ma :<C-u>Unite<Space>rails/mailer<CR>
 "Uniterails/viewを実行
 nnoremap <silent> [unite_rails]v :<C-u>Unite<Space>rails/view<CR>
 "Uniterails/javascriptを実行
@@ -295,6 +297,10 @@ nnoremap <silent> [unite_rails]l :<C-u>Unite<Space>rails/lib<CR>
 nnoremap <silent> [unite_rails]h :<C-u>Unite<Space>rails/helper<CR>
 "Unite rails/configを実行
 nnoremap <silent> [unite_rails]conf :<C-u>Unite<Space>rails/config<CR>
+"Unite rails/initializerを実行
+nnoremap <silent> [unite_rails]i :<C-u>Unite<Space>rails/initializer<CR>
+"Unite rails/dbを実行
+nnoremap <silent> [unite_rails]db :<C-u>Unite<Space>rails/db<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
