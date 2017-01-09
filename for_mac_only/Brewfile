@@ -1,2 +1,29 @@
 cask_args appdir: '/Applications'
 tap 'caskroom/cask'
+cask 'sequel-pro'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'alfred'
+cask 'evernote'
+cask 'dropbox'
+cask 'google-japanese-ime'
+cask 'xmind'
+cask 'toggldesktop'
+cask 'skitch'
+cask 'robomongo'
+
+#tap 'supermomonga/homebrew-splhack'
+tap 'splhack/homebrew-splhack'
+tap 'universal-ctags/universal-ctags'
+brew 'cscope'
+brew 'lua'
+brew 'cmigemo-mk', args: ['HEAD']
+brew 'macvim-kaoriya', args: ['HEAD' , 'with-lua', 'with-cscope']
+brew 'rename'
+brew 'gnu-sed'
+
+brew 'mas'
+brew 'tig'
+brew 'rbenv'
+
+mas 'kobito', id: 896624060
