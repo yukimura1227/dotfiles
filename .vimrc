@@ -47,6 +47,8 @@ NeoBundle 'tpope/vim-surround'
 " rubocop自動実行プラグイン
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'scrooloose/syntastic'
+" migemo用プラグイン(要 brew install cmigemo)
+NeoBundle 'haya14busa/vim-migemo'
 
 call neobundle#end()
 
