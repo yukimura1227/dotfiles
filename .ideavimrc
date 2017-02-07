@@ -1,18 +1,16 @@
-" 自動認識させる改行コードを指定する
-set fileformats=unix
+" Control + ']'をescapeに割当
 inoremap <c-]> <esc>
 " 検索語にマッチした単語をハイライトする
 " 逆は [ set nohlsearch ]
 set hlsearch
 
-" /を二回押下でハイライトを解除
-nnoremap // :nohlsearch<CR>
 " インクリメンタルサーチを使う ( 検索語を入れている途中から随時マッチする文字列の検索を開始)
 " 逆は [ set noincsearch ]
 set incsearch
+set clipboard=unnamed,autoselect
 "----------key bind for screen control----------"
 nnoremap [screen_control] <Nop>
-nmap s [screen_control]
+nmap <Space>s [screen_control]
 
 nnoremap <silent> [screen_control]s :<C-u>split<CR>
 nnoremap <silent> [screen_control]v :<C-u>vsplit<CR>
