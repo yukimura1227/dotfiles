@@ -11,19 +11,27 @@ cask 'xmind'
 cask 'toggldesktop'
 cask 'skitch'
 cask 'robomongo'
+cask 'docker'
 
 #tap 'supermomonga/homebrew-splhack'
 tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
+tap 'homebrew/dupes'
 brew 'cscope'
 brew 'lua'
 brew 'cmigemo-mk', args: ['HEAD']
 brew 'macvim-kaoriya', args: ['HEAD' , 'with-lua', 'with-cscope']
 brew 'rename'
 brew 'gnu-sed'
+brew 'mysql'
 
 brew 'mas'
 brew 'tig'
 brew 'rbenv'
+brew 'ruby-build'
+brew 'pkg-config'
+brew 'libxml2'
+brew 'libxslt'
+brew 'libiconv'
 
 mas 'kobito', id: 896624060
