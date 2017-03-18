@@ -24,6 +24,7 @@ brew 'macvim-kaoriya', args: ['HEAD' , 'with-lua', 'with-cscope']
 brew 'rename'
 brew 'gnu-sed'
 brew 'mysql'
+brew 'heroku-toolbelt'
 
 brew 'mas'
 brew 'tig'
