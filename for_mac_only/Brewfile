@@ -14,6 +14,7 @@ cask 'robomongo'
 cask 'docker'
 cask 'virtualbox'
 cask 'vagrant'
+cask 'slack'
 
 #tap 'supermomonga/homebrew-splhack'
 tap 'splhack/homebrew-splhack'
