@@ -223,7 +223,7 @@ endif
 
 "----------key bind for screen control----------"
 nnoremap [screen_control] <Nop>
-nmap <Space>s [screen_control]
+nmap <Space> [screen_control]
 
 nnoremap <silent> [screen_control]s :<C-u>split<CR>
 nnoremap <silent> [screen_control]v :<C-u>vsplit<CR>
