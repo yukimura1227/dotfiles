@@ -20,7 +20,8 @@ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
 " Uniteからrailsプロジェクトの移動を簡単にできるようにする
-NeoBundle 'basyura/unite-rails'
+" NeoBundle 'basyura/unite-rails'
+NeoBundle 'yukimura1227/unite-rails'
 " ファイラー
 NeoBundle 'Shougo/vimfiler'
 " 自動的に閉じ括弧を挿入してくれるプラグイン
@@ -45,7 +46,6 @@ NeoBundle 'Shougo/neoyank.vim'
 " 文字列を何かでくくったり解除したりするプラグイン
 NeoBundle 'tpope/vim-surround'
 " rubocop自動実行プラグイン
-NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'scrooloose/syntastic'
 " migemo用プラグイン(要 brew install cmigemo)
 NeoBundle 'haya14busa/vim-migemo'
@@ -331,3 +331,4 @@ endfunction"}}}
 " rubocupの自動実行の設定
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers=['rubocop', 'mri']
+" let g:syntastic_auto_loc_list = 1
