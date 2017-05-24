@@ -122,6 +122,8 @@ set showmatch
 set cursorline
 " ヤンクしたデータをクリップボードで使用＆選択範囲自動コピー
 set clipboard=unnamed,autoselect
+" using matchit plugin
+packadd! matchit
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute 'VimFilerExplore'
 " vimFilerでファイルを開いた場合は、別タブで開くように設定
