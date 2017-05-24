@@ -15,6 +15,7 @@ cask 'docker'
 cask 'virtualbox'
 cask 'vagrant'
 cask 'slack'
+cask 'google-earth'
 
 #tap 'supermomonga/homebrew-splhack'
 tap 'splhack/homebrew-splhack'
@@ -37,5 +38,6 @@ brew 'pkg-config'
 brew 'libxml2'
 brew 'libxslt'
 brew 'libiconv'
+brew 'phantomjs'
 
 mas 'kobito', id: 896624060
