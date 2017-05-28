@@ -17,6 +17,7 @@ cask 'vagrant'
 cask 'slack'
 cask 'google-earth'
 cask 'firefox'
+cask 'cyberduck'
 
 #tap 'supermomonga/homebrew-splhack'
 tap 'splhack/homebrew-splhack'
