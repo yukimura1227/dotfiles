@@ -29,6 +29,7 @@ brew 'rename'
 brew 'gnu-sed'
 brew 'mysql'
 brew 'heroku-toolbelt'
+brew 'graphviz'
 
 brew 'mas'
 brew 'tig'
