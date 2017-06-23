@@ -1,2 +1,24 @@
-# apm install --packages-file my_atom_package.txt
+atom-beautify
+autocomplete-paths
+autocomplete-ruby
+file-icons
 highlight-selected
+jumpy
+linter
+linter-ruby
+minimap
+minimap-autohide
+minimap-bookmarks
+minimap-cursorline
+minimap-highlight-selected
+pigments
+rails-snippets
+rails-transporter
+ruby-block
+show-ideographic-space
+smart-tab-name
+split-diff
+tabs-to-spaces
+vim-mode-plus
+vim-mode-plus-ex-mode
+sublime-style-column-selection
