@@ -1,0 +1,2 @@
+# apm install --packages-file my_atom_package.txt
+highlight-selected
