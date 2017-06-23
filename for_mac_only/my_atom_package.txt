@@ -16,6 +16,7 @@ minimap-bookmarks
 minimap-cursorline
 minimap-highlight-selected
 pigments
+platformio-ide-terminal
 rails-snippets
 rails-transporter
 ruby-block
