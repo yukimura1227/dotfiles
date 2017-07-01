@@ -1,6 +1,7 @@
 atom-beautify
 atom-html-preview
 autocomplete-paths
+autocomplete-plus
 autocomplete-ruby
 file-icons
 highlight-selected
