@@ -1,4 +1,5 @@
 atom-beautify
+atom-html-preview
 autocomplete-paths
 autocomplete-ruby
 file-icons
@@ -18,8 +19,7 @@ ruby-block
 show-ideographic-space
 smart-tab-name
 split-diff
+sublime-style-column-selection
 tabs-to-spaces
 vim-mode-plus
 vim-mode-plus-ex-mode
-sublime-style-column-selection
-atom-html-preview
