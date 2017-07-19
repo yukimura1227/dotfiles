@@ -7,6 +7,9 @@ highlight-selected
 jumpy
 linter
 linter-ruby
+markdown-preview-plus
+markdown-scroll-sync
+markdown-writer
 minimap
 minimap-autohide
 minimap-bookmarks
