@@ -44,5 +44,6 @@ brew 'libxslt'
 brew 'libiconv'
 brew 'phantomjs'
 brew 'awscli'
+brew 'nodebrew'
 
 mas 'kobito', id: 896624060
