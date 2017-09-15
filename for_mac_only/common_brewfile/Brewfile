@@ -1,8 +1,8 @@
 cask_args appdir: '/Applications'
-tap 'supermomonga/homebrew-splhack'
+# tap 'supermomonga/homebrew-splhack'
 tap 'caskroom/cask'
 tap 'homebrew/dupes'
-# tap 'splhack/homebrew-splhack'
+tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
 
 cask 'alfred'
