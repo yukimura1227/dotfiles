@@ -1,2 +1,5 @@
 .vim/bundle
 .netrwhist
+doc/tags
+*.swp
+*.un~
