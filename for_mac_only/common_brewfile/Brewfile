@@ -55,8 +55,8 @@ brew 'r'
 brew 'rbenv'
 brew 'redis'
 brew 'rename'
-brew 'rsense'
+# brew 'rsense'
 brew 'ruby-build'
 brew 'tig'
 
-mas 'kobito', id: 896624060
+# mas 'kobito', id: 896624060
