@@ -45,5 +45,6 @@ brew 'libiconv'
 brew 'phantomjs'
 brew 'awscli'
 brew 'nodebrew'
+brew 'ansible'
 
 mas 'kobito', id: 896624060
