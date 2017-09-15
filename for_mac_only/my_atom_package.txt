@@ -28,3 +28,4 @@ sublime-style-column-selection
 tabs-to-spaces
 vim-mode-plus
 vim-mode-plus-ex-mode
+project-manager
