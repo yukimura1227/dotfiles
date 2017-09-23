@@ -11,9 +11,9 @@
   stat = status
 
   # original
+  aliases    = !git config --get-regexp '^alias\\.'
   amend      = commit --amend
   com        = commit -m
-  list-alias = !git config --get-regexp '^alias\\.'
   me         = rev-parse --abbrev-ref HEAD
   push-me    = !git push origin `git rev-parse --abbrev-ref HEAD`
   patch      = add --patch # = git add -p
