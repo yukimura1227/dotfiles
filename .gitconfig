@@ -1,5 +1,5 @@
 [user]
-  name = yukimura1227
+  name  = yukimura1227
   email = takamura1227@gmail.com
 [color]
   ui = auto
@@ -17,4 +17,4 @@
 [merge]
   tool = vimdiff
 [core]
-	editor = vim
+  editor = vim
