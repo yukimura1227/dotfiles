@@ -4,9 +4,9 @@
 [color]
   ui = auto
 [alias]
-  sts          = status
+  stat         = status
   br           = branch
-  co           = checkout
+  ch           = checkout
   tr           = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
   current      = rev-parse --abbrev-ref HEAD
   push-current = !git push origin `git rev-parse --abbrev-ref HEAD`
