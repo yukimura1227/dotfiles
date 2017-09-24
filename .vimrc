@@ -50,6 +50,18 @@ NeoBundle 'scrooloose/syntastic'
 " migemo用プラグイン(要 brew install cmigemo)
 NeoBundle 'haya14busa/vim-migemo'
 
+" vim上でshellを動かすためのユーティリティ
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+NeoBundle 'Shougo/vimshell'
+
 call neobundle#end()
 
 " Required:
