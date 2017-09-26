@@ -32,6 +32,8 @@ NeoBundle 'grep.vim'
 NeoBundle 'tpope/vim-endwise'
 " Gitを便利に使うプラグイン
 NeoBundle 'tpope/vim-fugitive'
+" Gitの変更行の視覚化
+NeoBundle 'airblade/vim-gitgutter'
 " ステータスラインをいい感じにしてくれるプラグイン
 NeoBundle 'itchyny/lightline.vim'
 " coffee scriptをいい感じに編集できるプラグイン"
