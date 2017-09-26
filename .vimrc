@@ -194,7 +194,10 @@ highlight SpecialKey ctermfg=LightCyan
 let g:lightline = {
   \ 'colorscheme': 'wombat',
   \ 'active': {
-  \   'left': [ ['fugitive', 'filename'] ]
+  \   'left': [
+  \     ['mode', 'paste'],
+  \     ['fugitive', 'filename'],
+  \   ]
   \ },
   \ 'inactive': {
   \   'left': [ ['filename', 'inactive-line'] ]
