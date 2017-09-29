@@ -1,5 +1,15 @@
 .vim/bundle
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
 .netrwhist
-doc/tags
-*.swp
-*.un~
+*~
+# Auto-generated tag files
+tags
