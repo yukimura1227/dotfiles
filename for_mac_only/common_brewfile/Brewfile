@@ -60,4 +60,5 @@ brew 'rename'
 # brew 'rsense'
 brew 'ruby-build'
 brew 'tig'
+brew 'translate-shell'
 
