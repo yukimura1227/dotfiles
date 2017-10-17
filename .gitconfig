@@ -25,3 +25,4 @@
   tool = vimdiff
 [core]
   editor = vim
+  quotepath = false
