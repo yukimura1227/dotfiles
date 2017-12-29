@@ -35,6 +35,7 @@ cask 'toggldesktop'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'xmind'
+cask 'xquartz' # for wine
 
 brew 'ansible'
 brew 'awscli'
@@ -72,4 +73,5 @@ brew 'rename'
 brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
+brew 'wine'
 
