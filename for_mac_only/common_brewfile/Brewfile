@@ -74,4 +74,5 @@ brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
 brew 'wine'
+brew 'yarn'
 
