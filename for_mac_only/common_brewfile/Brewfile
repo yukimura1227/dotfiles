@@ -36,6 +36,7 @@ cask 'sqlitebrowser'
 cask 'toggldesktop'
 cask 'vagrant'
 cask 'virtualbox'
+cask 'visual-studio-code'
 cask 'xmind'
 cask 'xquartz' # for wine
 
