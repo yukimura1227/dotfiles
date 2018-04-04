@@ -1,5 +1,5 @@
 [user]
-  name  = yukimura1227
+  name = yukimura1227
   email = takamura1227@gmail.com
 [color]
   ui = auto
@@ -9,16 +9,19 @@
   ch   = checkout
   di   = diff
   stat = status
+  l    = log
 
   # original
   aliases    = !git config --get-regexp '^alias\\.'
   amend      = commit --amend
   com        = commit -m
+  lf         = log --follow
   me         = rev-parse --abbrev-ref HEAD
   push-me    = !git push origin `git rev-parse --abbrev-ref HEAD`
   push-me-f  = !git push origin `git rev-parse --abbrev-ref HEAD` --force-with-lease
   patch      = add --patch # = git add -p
   tr         = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  trf        = log --follow --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
 
 [diff]
   tool = vimdiff
