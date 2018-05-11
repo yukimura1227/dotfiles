@@ -20,8 +20,7 @@ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
 " Uniteからrailsプロジェクトの移動を簡単にできるようにする
-" NeoBundle 'basyura/unite-rails'
-NeoBundle 'yukimura1227/unite-rails'
+NeoBundle 'basyura/unite-rails'
 " ファイラー
 NeoBundle 'Shougo/vimfiler'
 " 自動的に閉じ括弧を挿入してくれるプラグイン
@@ -308,6 +307,8 @@ nnoremap <silent> [unite_rails]mo :<C-u>Unite<Space>rails/model<CR>
 nnoremap <silent> [unite_rails]ma :<C-u>Unite<Space>rails/mailer<CR>
 "Uniterails/viewを実行
 nnoremap <silent> [unite_rails]v :<C-u>Unite<Space>rails/view<CR>
+"Unite rails/jobを実行
+nnoremap <silent> [unite_rails]job :<C-u>Unite<Space>rails/job<CR>
 "Uniterails/javascriptを実行
 nnoremap <silent> [unite_rails]js :<C-u>Unite<Space>rails/javascript<CR>
 "Uniterails/stylesheetを実行
