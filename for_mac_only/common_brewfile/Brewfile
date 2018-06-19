@@ -9,6 +9,7 @@ tap 'universal-ctags/universal-ctags'
 
 cask 'alfred'
 cask 'atom'
+cask 'chromedriver'
 cask 'cyberduck'
 cask 'dash'
 cask 'docker'
@@ -42,7 +43,6 @@ cask 'xquartz' # for wine
 
 brew 'ansible'
 brew 'awscli'
-brew 'chromedriver'
 brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'gawk'
