@@ -80,6 +80,7 @@ brew 'rename'
 brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
+brew 'wget'
 brew 'wine'
 brew 'yarn'
 
