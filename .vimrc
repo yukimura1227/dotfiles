@@ -50,6 +50,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 " migemo用プラグイン(要 brew install cmigemo)
 NeoBundle 'haya14busa/vim-migemo'
+" SQLのfomat用プラグイン
+NeoBundle 'yukimura1227/fmtsql.vim'
 
 " vim上でshellを動かすためのユーティリティ
 NeoBundle 'Shougo/vimproc.vim', {
