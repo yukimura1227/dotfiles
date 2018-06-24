@@ -82,3 +82,4 @@ brew 'translate-shell'
 brew 'wine'
 brew 'yarn'
 
+mas 'giphy-capture-the-gif-maker', id: 668208984
