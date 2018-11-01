@@ -21,8 +21,10 @@
   push-me    = !git push origin `git rev-parse --abbrev-ref HEAD`
   push-me-f  = !git push origin `git rev-parse --abbrev-ref HEAD` --force-with-lease
   patch      = add --patch # = git add -p
+  today      = !git tr --all --since="midnight" --author="yukimura1227"
   tr         = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
   trf        = log --follow --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  yesterday  = !git tr --all --since="yesterday" --until="midnight" --author="yukimura1227"
 
 [diff]
   tool = vimdiff
