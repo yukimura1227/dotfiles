@@ -43,6 +43,7 @@ cask 'xquartz' # for wine
 
 brew 'ansible'
 brew 'awscli'
+brew 'bat'
 brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'gawk'
