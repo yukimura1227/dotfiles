@@ -20,3 +20,5 @@ tags
 .vim/.vim
 .matplotlib/.matplotlib
 .matplotlib/fontList.py3k.cache
+.matplotlib/fontList.cache
+.matplotlib/fontList.json
