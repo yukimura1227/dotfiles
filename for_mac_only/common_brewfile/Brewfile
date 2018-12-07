@@ -84,6 +84,6 @@ brew 'tig'
 brew 'translate-shell'
 brew 'wget'
 brew 'wine'
-brew 'yarn'
+brew 'yarn', args: ['without-node']
 
 mas 'giphy-capture-the-gif-maker', id: 668208984
