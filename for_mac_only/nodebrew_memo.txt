@@ -6,7 +6,7 @@ nodebrew install-binary latest
 nodebrew use [target version]
 
 # 3
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
+# ここは、dotfilesで管理しているので不要 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 
 # 4 load
 source ~/.bash_profile
