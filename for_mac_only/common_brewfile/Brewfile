@@ -66,7 +66,6 @@ brew 'mariadb-connector-c' # RのRMySQLで利用している模様
 brew 'mas'
 brew 'mysql@5.6'
 brew 'nodebrew'
-brew 'postgresql'
 brew 'peco'
 brew 'pkg-config'
 brew 'pssh'
