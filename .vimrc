@@ -361,3 +361,9 @@ let g:syntastic_ruby_checkers=['rubocop', 'mri']
 nnoremap <C-]> g<C-]>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>"
+
+" insertモードのカーソル移動をEmacsに似せて上下左右だけ実現
+imap <C-p> <Up>
+imap <C-n> <Down>
+imap <C-b> <Left>
+imap <C-f> <Right>
