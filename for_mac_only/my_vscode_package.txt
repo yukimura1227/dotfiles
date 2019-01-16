@@ -1,3 +1,5 @@
 MS-CEINTL.vscode-language-pack-ja
+octref.vetur
+robinbentley.sass-indented
 shd101wyy.markdown-preview-enhanced
 vscodevim.vim
