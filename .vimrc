@@ -5,74 +5,69 @@ if has('vim_starting')
   set nocompatible               " Be iMproved
 
   " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/dein/dein.vim
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+call dein#begin('~/.vim/dein')
 
-" Let NeoBundle manage NeoBundle
+" Let dien manage dien
 " Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+call dein#add('Shougo/dein.vim')
 
 " ファイルオープンを便利に
-NeoBundle 'Shougo/unite.vim'
+call dein#add('Shougo/unite.vim')
 " Unite.vimで最近使ったファイルを表示できるようにする
-NeoBundle 'Shougo/neomru.vim'
+call dein#add('Shougo/neomru.vim')
 " Uniteからrailsプロジェクトの移動を簡単にできるようにする
-NeoBundle 'basyura/unite-rails'
+call dein#add('basyura/unite-rails')
 " ファイラー
-NeoBundle 'Shougo/vimfiler'
+call dein#add('Shougo/vimfiler')
 " 自動的に閉じ括弧を挿入してくれるプラグイン
-NeoBundle 'Townk/vim-autoclose'
+call dein#add('Townk/vim-autoclose')
 " grepを可能にするプラグイン
-NeoBundle 'grep.vim'
+call dein#add('vim-scripts/grep.vim')
 " Ruby向けにendを自動挿入してくれるプラグイン
-NeoBundle 'tpope/vim-endwise'
+call dein#add('tpope/vim-endwise')
 " Gitを便利に使うプラグイン
-NeoBundle 'tpope/vim-fugitive'
+call dein#add('tpope/vim-fugitive')
 " Gitの変更行の視覚化
-NeoBundle 'airblade/vim-gitgutter'
+call dein#add('airblade/vim-gitgutter')
 " ステータスラインをいい感じにしてくれるプラグイン
-NeoBundle 'itchyny/lightline.vim'
+call dein#add('itchyny/lightline.vim')
 " coffee scriptをいい感じに編集できるプラグイン"
-NeoBundle 'kchmck/vim-coffee-script'
+call dein#add('kchmck/vim-coffee-script')
 " インデントに色を付けて見やすくする
-NeoBundle 'nathanaelkane/vim-indent-guides'
+call dein#add('nathanaelkane/vim-indent-guides')
 
 " コード補完
-NeoBundle 'Shougo/neocomplete.vim'
+call dein#add('Shougo/neocomplete.vim')
 " ヤンクのヒストリーを管理できるプラグイン
-NeoBundle 'Shougo/neoyank.vim'
+call dein#add('Shougo/neoyank.vim')
 " 文字列を何かでくくったり解除したりするプラグイン
-NeoBundle 'tpope/vim-surround'
+call dein#add('tpope/vim-surround')
 " rubocop自動実行プラグイン
-NeoBundle 'scrooloose/syntastic'
+call dein#add('scrooloose/syntastic')
 " migemo用プラグイン(要 brew install cmigemo)
-NeoBundle 'haya14busa/vim-migemo'
+call dein#add('haya14busa/vim-migemo')
 " SQLのfomat用プラグイン
-NeoBundle 'yukimura1227/fmtsql.vim'
+call dein#add('yukimura1227/fmtsql.vim')
 
 " vim上でshellを動かすためのユーティリティ
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-NeoBundle 'Shougo/vimshell'
+call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
 
-call neobundle#end()
+call dein#add('Shougo/vimshell')
+
+call dein#end()
 
 " Required:
 filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
-NeoBundleCheck
+if dein#check_install()
+  call dein#install()
+endif
 """"""""""""""""""""""""""""""
 
 " neocompleteの設定
