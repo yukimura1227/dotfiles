@@ -168,6 +168,7 @@ set wrap
 let g:molokai_original = 1
 set t_Co=256
 colorscheme molokai
+highlight Search term=reverse cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000 guibg=#FD971F
 
 "全角スペースをハイライト表示
 function! ZenkakuSpace()
