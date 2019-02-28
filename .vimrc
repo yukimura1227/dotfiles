@@ -172,6 +172,8 @@ set t_Co=256
 colorscheme molokai
 highlight Search term=reverse cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000 guibg=#FD971F
 
+autocmd FileType vue syntax sync fromstart
+
 "全角スペースをハイライト表示
 function! ZenkakuSpace()
     highlight ZenkakuSpace cterm=reverse ctermfg=LightCyan gui=reverse guifg=LightCyan
