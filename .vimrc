@@ -58,6 +58,8 @@ call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
 
 call dein#add('Shougo/vimshell')
 
+call dein#add('posva/vim-vue')
+
 call dein#end()
 
 " Required:
