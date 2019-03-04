@@ -362,3 +362,7 @@ imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+
+let g:ale_linters = {
+\   'ruby': ['rubocop'],
+\}
