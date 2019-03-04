@@ -47,7 +47,7 @@ call dein#add('Shougo/neoyank.vim')
 " 文字列を何かでくくったり解除したりするプラグイン
 call dein#add('tpope/vim-surround')
 " rubocop自動実行プラグイン
-call dein#add('scrooloose/syntastic')
+call dein#add('w0rp/ale')
 " migemo用プラグイン(要 brew install cmigemo)
 call dein#add('haya14busa/vim-migemo')
 " SQLのfomat用プラグイン
@@ -351,11 +351,6 @@ function! s:unite_my_settings()"{{{
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
-
-" rubocupの自動実行の設定
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
-let g:syntastic_ruby_checkers=['rubocop', 'mri']
-" let g:syntastic_auto_loc_list = 1
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
