@@ -1,6 +1,7 @@
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
+let s:dein_dir = '~/.vim/dein'
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
@@ -9,12 +10,15 @@ if has('vim_starting')
 endif
 
 " Required:
-call dein#begin('~/.vim/dein')
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+  call dein#load_toml('~/.vim/dein.toml')
+  call dein#end()
+  call dein#save_state()
+endif
 
+call dein#begin(s:dein_dir)
 " Let dien manage dien
-" Required:
-call dein#add('Shougo/dein.vim')
-
 " ファイルオープンを便利に
 call dein#add('Shougo/unite.vim')
 " Unite.vimで最近使ったファイルを表示できるようにする
