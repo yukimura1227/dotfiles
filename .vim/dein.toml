@@ -84,3 +84,7 @@ repo ='Shougo/vimshell'
 [[plugins]]
 repo ='posva/vim-vue'
 
+[[plugins]]
+# toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
