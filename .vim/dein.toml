@@ -1,2 +1,86 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
+
+[[plugins]]
+# ファイルオープンを便利に
+repo ='Shougo/unite.vim'
+
+[[plugins]]
+# Unite.vimで最近使ったファイルを表示できるようにする
+repo ='Shougo/neomru.vim'
+
+[[plugins]]
+# Uniteからrailsプロジェクトの移動を簡単にできるようにする
+repo ='basyura/unite-rails'
+
+[[plugins]]
+# ファイラー
+repo ='Shougo/vimfiler'
+
+[[plugins]]
+# 自動的に閉じ括弧を挿入してくれるプラグイン
+repo ='Townk/vim-autoclose'
+
+[[plugins]]
+# grepを可能にするプラグイン
+repo ='vim-scripts/grep.vim'
+
+[[plugins]]
+# Ruby向けにendを自動挿入してくれるプラグイン
+repo ='tpope/vim-endwise'
+
+[[plugins]]
+# Gitを便利に使うプラグイン
+repo ='tpope/vim-fugitive'
+
+[[plugins]]
+# Gitの変更行の視覚化
+repo ='airblade/vim-gitgutter'
+
+[[plugins]]
+# ステータスラインをいい感じにしてくれるプラグイン
+repo ='itchyny/lightline.vim'
+
+[[plugins]]
+# coffee scriptをいい感じに編集できるプラグイン"
+repo ='kchmck/vim-coffee-script'
+
+[[plugins]]
+# インデントに色を付けて見やすくする
+repo ='nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/neocomplete.vim'
+
+[[plugins]]
+# ヤンクのヒストリーを管理できるプラグイン
+repo ='Shougo/neoyank.vim'
+
+[[plugins]]
+# 文字列を何かでくくったり解除したりするプラグイン
+repo ='tpope/vim-surround'
+
+[[plugins]]
+# rubocop自動実行プラグイン
+repo ='w0rp/ale'
+
+[[plugins]]
+# migemo用プラグイン(要 brew install cmigemo)
+repo ='haya14busa/vim-migemo'
+
+[[plugins]]
+# SQLのfomat用プラグイン
+repo ='yukimura1227/fmtsql.vim'
+
+[[plugins]]
+# vim上でshellを動かすためのユーティリティ
+repo ='Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo ='Shougo/vimshell'
+
+[[plugins]]
+repo ='posva/vim-vue'
+

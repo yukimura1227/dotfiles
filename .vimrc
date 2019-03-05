@@ -17,55 +17,6 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-call dein#begin(s:dein_dir)
-" Let dien manage dien
-" ファイルオープンを便利に
-call dein#add('Shougo/unite.vim')
-" Unite.vimで最近使ったファイルを表示できるようにする
-call dein#add('Shougo/neomru.vim')
-" Uniteからrailsプロジェクトの移動を簡単にできるようにする
-call dein#add('basyura/unite-rails')
-" ファイラー
-call dein#add('Shougo/vimfiler')
-" 自動的に閉じ括弧を挿入してくれるプラグイン
-call dein#add('Townk/vim-autoclose')
-" grepを可能にするプラグイン
-call dein#add('vim-scripts/grep.vim')
-" Ruby向けにendを自動挿入してくれるプラグイン
-call dein#add('tpope/vim-endwise')
-" Gitを便利に使うプラグイン
-call dein#add('tpope/vim-fugitive')
-" Gitの変更行の視覚化
-call dein#add('airblade/vim-gitgutter')
-" ステータスラインをいい感じにしてくれるプラグイン
-call dein#add('itchyny/lightline.vim')
-" coffee scriptをいい感じに編集できるプラグイン"
-call dein#add('kchmck/vim-coffee-script')
-" インデントに色を付けて見やすくする
-call dein#add('nathanaelkane/vim-indent-guides')
-
-" コード補完
-call dein#add('Shougo/neocomplete.vim')
-" ヤンクのヒストリーを管理できるプラグイン
-call dein#add('Shougo/neoyank.vim')
-" 文字列を何かでくくったり解除したりするプラグイン
-call dein#add('tpope/vim-surround')
-" rubocop自動実行プラグイン
-call dein#add('w0rp/ale')
-" migemo用プラグイン(要 brew install cmigemo)
-call dein#add('haya14busa/vim-migemo')
-" SQLのfomat用プラグイン
-call dein#add('yukimura1227/fmtsql.vim')
-
-" vim上でshellを動かすためのユーティリティ
-call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-
-call dein#add('Shougo/vimshell')
-
-call dein#add('posva/vim-vue')
-
-call dein#end()
-
 " Required:
 filetype plugin indent on
 
