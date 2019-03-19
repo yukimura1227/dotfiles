@@ -46,6 +46,7 @@ brew 'bat'
 brew 'circleci'
 brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
+brew 'universal-ctags', args: ['HEAD']
 brew 'gawk'
 brew 'gcc'
 brew 'git'
