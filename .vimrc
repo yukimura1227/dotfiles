@@ -265,7 +265,7 @@ nnoremap <silent> [unite_rails]ma :<C-u>Unite<Space>rails/mailer<CR>
 "Uniterails/viewを実行
 nnoremap <silent> [unite_rails]v :<C-u>Unite<Space>rails/view<CR>
 "Unite rails/jobを実行
-nnoremap <silent> [unite_rails]job :<C-u>Unite<Space>rails/job<CR>
+nnoremap <silent> [unite_rails]jo :<C-u>Unite<Space>rails/jo<CR>
 "Uniterails/javascriptを実行
 nnoremap <silent> [unite_rails]js :<C-u>Unite<Space>rails/javascript<CR>
 "Uniterails/stylesheetを実行
