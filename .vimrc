@@ -97,6 +97,8 @@ set cursorline
 set clipboard=unnamed,autoselect
 " using matchit plugin
 packadd! matchit
+" grep 系の処理は、自動的にquickfixを開く
+autocmd QuickFixCmdPost *grep* cwindow
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute 'VimFilerExplore'
 " vimFilerでファイルを開いた場合は、別タブで開くように設定
