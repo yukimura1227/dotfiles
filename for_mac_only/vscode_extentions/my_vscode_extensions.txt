@@ -1,4 +1,5 @@
 esbenp.prettier-vscode
+jebbs.plantuml
 MS-CEINTL.vscode-language-pack-ja
 octref.vetur
 robinbentley.sass-indented
