@@ -5,7 +5,7 @@
 
 BASE_DIR=`dirname "${0}"`
 
-package_File_path="${BASE_DIR}/my_vscode_package.txt"
+package_File_path="${BASE_DIR}/my_vscode_extensions.txt"
 
 for package_name in `cat ${package_File_path}`
 do
