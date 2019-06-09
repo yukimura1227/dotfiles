@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # NOTE: you can export extensions below
-# code --list-extensions > my_vscode_package.txt
+# code --list-extensions > my_vscode_extensions.txt
 
 BASE_DIR=`dirname "${0}"`
 
