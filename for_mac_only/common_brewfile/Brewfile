@@ -1,6 +1,6 @@
 # tap 'supermomonga/homebrew-splhack'
 tap 'caskroom/cask'
-# tap 'caskroom/fonts' # TODO: 各環境で brew untap caskroom/fonts この行は削除すること(caskroom/caskにfont-ricty-diminishedが入ったようなので)
+# tap 'caskroom/fonts' # TODO: 各環境で brew untap caskroom/fonts この行は削除すること(caskroom/caskにfont-ricty-diminishedが入ったようなので) done->mac:mini
 tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
