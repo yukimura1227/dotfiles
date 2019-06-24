@@ -6,6 +6,7 @@ tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
 
 cask 'alfred'
+cask 'android-file-transfer'
 cask 'atom'
 cask 'chromedriver'
 cask 'cyberduck'
