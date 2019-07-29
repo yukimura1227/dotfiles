@@ -88,3 +88,8 @@ repo ='posva/vim-vue'
 # toml syntax
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+
+[[plugins]]
+# utility for go
+repo = 'fatih/vim-go'
+on_ft = 'go'
