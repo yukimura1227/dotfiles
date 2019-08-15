@@ -323,3 +323,6 @@ imap <C-f> <Right>
 let g:ale_linters = {
 \   'ruby': ['rubocop'],
 \}
+
+" terminal-jobモードからterminal-normalモードの切り替えをマッピング
+tnoremap <Esc> <C-\><C-n>
