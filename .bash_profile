@@ -19,8 +19,7 @@ fi
 
 export GOPATH=~/go
 
-if type "ndenv" > /dev/null 2>&1
+if type "nodenv" > /dev/null 2>&1
 then
-  export PATH="$HOME/.ndenv/bin:$PATH"
-  eval "$(ndenv init -)"
+  eval "$(nodenv init -)"
 fi
