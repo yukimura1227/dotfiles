@@ -79,9 +79,6 @@ repo ='Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo ='Shougo/vimshell'
-
-[[plugins]]
 repo ='posva/vim-vue'
 
 [[plugins]]

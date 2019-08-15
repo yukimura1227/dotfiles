@@ -14,6 +14,7 @@ if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml('~/.vim/dein.toml')
   call dein#end()
+  call map(dein#check_clean(), "delete(v:val, 'rf')")
   call dein#save_state()
 endif
 
@@ -174,7 +175,6 @@ function! MyFilename()
   return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
         \ (&ft == 'vimfiler' ? vimfiler#get_status_string() :
         \  &ft == 'unite' ? unite#get_status_string() :
-        \  &ft == 'vimshell' ? vimshell#get_status_string() :
         \ '' != expand('%') ? expand('%') : '[No Name]')
 endfunction
 
