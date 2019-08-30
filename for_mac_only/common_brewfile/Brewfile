@@ -85,6 +85,7 @@ brew 'rename'
 brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
+brew 'tree'
 brew 'wget'
 brew 'wine'
 brew 'yarn', args: ['without-node']
