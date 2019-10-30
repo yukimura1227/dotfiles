@@ -15,7 +15,7 @@ Session.vim
 .netrwhist
 *~
 # Auto-generated tag files
-tags
+/tags
 
 .vim/.vim
 .matplotlib/.matplotlib
