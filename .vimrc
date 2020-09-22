@@ -96,16 +96,23 @@ set showmatch
 set cursorline
 " ヤンクしたデータをクリップボードで使用＆選択範囲自動コピー
 set clipboard=unnamed,autoselect
+
+" matchit関連の設定
 " using matchit plugin
 packadd! matchit
+
 " grep 系の処理は、自動的にquickfixを開く
 autocmd QuickFixCmdPost *grep* cwindow
-" デフォルトでツリーを表示させる
+
+" VimFileExplore関連の設定
+"  " デフォルトでツリーを表示させる
 autocmd VimEnter * execute 'VimFilerExplore'
 " vimFilerでファイルを開いた場合は、別タブで開くように設定
 let g:vimfiler_edit_action = 'tabopen'
+
 " cofee scriptのファイルタイプのマッピング
 autocmd BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+
 " vim-indent-guidesの設定
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
@@ -114,16 +121,18 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 let g:indent_guides_color_change_percent = 30
 let g:indent_guides_guide_size = 1
+
 "挿入モード時、ステータスラインの色を変更
 let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
-" 構文ごとに色分け表示する
-" 逆は [ syntax off ]
+
+" 構文ごとに色分け表示する,逆は [ syntax off ]
 syntax on
 " [ syntax on ] の場合のコメント文の色を変更する
 highlight Comment ctermfg=LightCyan
-" ウィンドウ幅で行を折り返す
-" 逆は [ set nowrap ]
+
+" ウィンドウ幅で行を折り返す, 逆は [ set nowrap ]
 set wrap
+
 "カラースキーマを設定
 set t_Co=256
 let g:purify_bold = 1        " default: 1
@@ -150,7 +159,6 @@ if has('syntax')
     call ZenkakuSpace()
 endif
 highlight SpecialKey ctermfg=LightCyan
-
 
 """"""""""""""""""""""""""
 "lightline.vimの設定
@@ -330,3 +338,4 @@ let g:ale_linters = {
 
 " terminal-jobモードからterminal-normalモードの切り替えをマッピング
 tnoremap <Esc> <C-\><C-n>
+
