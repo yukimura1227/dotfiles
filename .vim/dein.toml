@@ -90,3 +90,8 @@ on_ft = 'toml'
 # utility for go
 repo = 'fatih/vim-go'
 on_ft = 'go'
+
+[[plugins]]
+repo = 'kyoz/purify'
+rtp = 'vim'
+

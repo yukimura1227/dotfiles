@@ -125,10 +125,14 @@ highlight Comment ctermfg=LightCyan
 " 逆は [ set nowrap ]
 set wrap
 "カラースキーマを設定
-let g:molokai_original = 1
 set t_Co=256
-colorscheme molokai
-highlight Search term=reverse cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000 guibg=#FD971F
+let g:purify_bold = 1        " default: 1
+let g:purify_italic = 0      " default: 1
+let g:purify_underline = 1   " default: 1
+let g:purify_undercurl = 1   " default: 1
+let g:purify_inverse = 1     " default: 1
+colorscheme purify
+" highlight Search term=reverse cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000 guibg=#FD971F
 
 autocmd FileType vue syntax sync fromstart
 
@@ -151,7 +155,7 @@ highlight SpecialKey ctermfg=LightCyan
 """"""""""""""""""""""""""
 "lightline.vimの設定
 let g:lightline = {
-  \ 'colorscheme': 'wombat',
+  \ 'colorscheme': 'purify',
   \ 'active': {
   \   'left': [
   \     ['mode', 'paste'],
