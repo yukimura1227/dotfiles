@@ -268,7 +268,7 @@
                     "simple_modifications": []
                 },
                 {
-                    "disable_built_in_keyboard_if_exists": false,
+                    "disable_built_in_keyboard_if_exists": true,
                     "fn_function_keys": [],
                     "identifiers": {
                         "is_keyboard": true,
@@ -285,6 +285,14 @@
                             },
                             "to": {
                                 "key_code": "left_control"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "international2"
+                            },
+                            "to": {
+                                "key_code": "right_command"
                             }
                         },
                         {
@@ -329,10 +337,10 @@
                         },
                         {
                             "from": {
-                                "key_code": "international2"
+                                "pointing_button": "button3"
                             },
                             "to": {
-                                "key_code": "right_command"
+                                "pointing_button": "button4"
                             }
                         }
                     ]
