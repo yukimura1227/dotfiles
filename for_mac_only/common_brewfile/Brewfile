@@ -31,6 +31,7 @@ cask 'kindle'
 cask 'licecap'
 cask 'mysqlworkbench'
 cask 'ngrok'
+cask 'notion'
 # cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する done: yukimura's macbook
 cask 'postman'
 cask 'robo-3t'
