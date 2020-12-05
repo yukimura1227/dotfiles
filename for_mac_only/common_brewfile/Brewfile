@@ -43,7 +43,7 @@ cask 'toggl'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'visual-studio-code'
-cask 'xmind'
+# cask 'xmind' # TODO: 各環境でunsintallしたら削除する done: yukimura's macbook
 cask 'xquartz' # for wine
 
 brew 'ansible'
