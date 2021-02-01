@@ -32,7 +32,7 @@ cask 'licecap'
 cask 'mysqlworkbench'
 cask 'ngrok'
 cask 'notion'
-# cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する done: yukimura's macbook
+# cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する done: yukimura's macbook, macbook for work
 cask 'postman'
 cask 'robo-3t'
 cask 'rstudio'
