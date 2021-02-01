@@ -32,7 +32,7 @@ cask 'licecap'
 cask 'mysqlworkbench'
 cask 'ngrok'
 cask 'notion'
-# cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する done: yukimura's macbook, macbook for work
+# cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する  macbook for work o, mac-mini: x, macbook for personal o
 cask 'postman'
 cask 'robo-3t'
 cask 'rstudio'
@@ -44,7 +44,7 @@ cask 'toggl'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'visual-studio-code'
-# cask 'xmind' # TODO: 各環境でunsintallしたら削除する done: yukimura's macbook
+# cask 'xmind' # TODO: 各環境でunsintallしたら削除する macbook for work o, mac-mini: x, macbook for personal o
 cask 'xquartz' # for wine
 
 brew 'ansible'
@@ -74,9 +74,9 @@ brew 'mariadb-connector-c' # RのRMySQLで利用している模様
 brew 'mas'
 #brew "mysql@5.6", link: true # TODO: 各環境でmysql@5.6をuninstallしたら削除する macbook for work o, mac-mini: x, macbook for personal x
 brew "mysql@5.7", link: true
-# brew 'ndenv' # TODO: 各環境でnodebrewをunsintallしたら削除する done: mac-mini
+# brew 'ndenv' # TODO: 各環境でnodebrewをunsintallしたら削除する macbook for work o, mac-mini: o, macbook for personal x
 brew 'nodenv'
-# brew 'nodebrew' # TODO: 各環境でnodebrewをunsintallしたら削除する done: mac-mini
+# brew 'nodebrew' # TODO: 各環境でnodebrewをunsintallしたら削除する macbook for work o, mac-mini: o, macbook for personal x
 brew 'peco'
 brew 'pkg-config'
 brew 'pstree'
