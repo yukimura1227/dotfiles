@@ -72,7 +72,8 @@ brew 'lua@5.1' # macvim-kaoriyaがlua lua@5.1両方必要そう
 # brew 'macvim-kaoriya', args: ['HEAD' , 'with-lua', 'with-cscope']
 brew 'mariadb-connector-c' # RのRMySQLで利用している模様
 brew 'mas'
-brew "mysql@5.6", link: true
+#brew "mysql@5.6", link: true # TODO: 各環境でmysql@5.6をuninstallしたら削除する macbook for work o, mac-mini: x, macbook for personal x
+brew "mysql@5.7", link: true
 # brew 'ndenv' # TODO: 各環境でnodebrewをunsintallしたら削除する done: mac-mini
 brew 'nodenv'
 # brew 'nodebrew' # TODO: 各環境でnodebrewをunsintallしたら削除する done: mac-mini
