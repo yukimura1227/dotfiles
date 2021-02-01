@@ -32,11 +32,11 @@ cask 'licecap'
 cask 'mysqlworkbench'
 cask 'ngrok'
 cask 'notion'
-cask 'phantomjs'
+# cask 'phantomjs' # TODO: 各環境でをunsintallしたら削除する done: yukimura's macbook
 cask 'postman'
 cask 'robo-3t'
 cask 'rstudio'
-cask 'homebrew/cask-versions/sequel-pro-nightly'
+cask 'sequel-pro-nightly'
 cask 'skitch'
 cask 'slack'
 cask 'smart-scroll'
@@ -44,7 +44,7 @@ cask 'toggl'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'visual-studio-code'
-cask 'xmind'
+# cask 'xmind' # TODO: 各環境でunsintallしたら削除する done: yukimura's macbook
 cask 'xquartz' # for wine
 
 brew 'ansible'
@@ -54,7 +54,6 @@ brew 'github/gh/gh'
 brew 'circleci'
 brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
-brew 'universal-ctags', args: ['HEAD']
 brew 'gawk'
 brew 'gcc'
 brew 'git'
@@ -90,6 +89,7 @@ brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
 brew 'tree'
+brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'wine'
 brew 'yarn', args: ['without-node']
