@@ -95,3 +95,6 @@ on_ft = 'go'
 repo = 'kyoz/purify'
 rtp = 'vim'
 
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
