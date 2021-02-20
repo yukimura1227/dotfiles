@@ -64,7 +64,7 @@ repo ='Shougo/neoyank.vim'
 # ファイルオープンを便利に
 repo ='Shougo/unite.vim'
 
-[plugins]]
+[[plugins]]
 # ファイラー
 repo ='Shougo/vimfiler'
 
@@ -85,7 +85,7 @@ repo ='tpope/vim-endwise'
 # Gitを便利に使うプラグイン
 repo ='tpope/vim-fugitive'
 
-[][plugins]]
+[[plugins]]
 # 文字列を何かでくくったり解除したりするプラグイン
 repo ='tpope/vim-surround'
 
