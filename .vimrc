@@ -300,6 +300,10 @@ nnoremap <silent> [unite_rails]i :<C-u>Unite<Space>rails/initializer<CR>
 nnoremap <silent> [unite_rails]db :<C-u>Unite<Space>rails/db<CR>
 "Unite rails/decoratorを実行
 nnoremap <silent> [unite_rails]de :<C-u>Unite<Space>rails/decorator<CR>
+"Unite rails/decoratorを実行
+nnoremap <silent> [unite_rails]de :<C-u>Unite<Space>rails/decorator<CR>
+"Unite rails/webpackを実行
+nnoremap <silent> [unite_rails]w :<C-u>Unite<Space>rails/webpack<CR>
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
