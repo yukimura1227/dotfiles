@@ -64,7 +64,7 @@ repo ='Shougo/neoyank.vim'
 # ファイルオープンを便利に
 repo ='Shougo/unite.vim'
 
-[plugins]]
+[[plugins]]
 # ファイラー
 repo ='Shougo/vimfiler'
 
