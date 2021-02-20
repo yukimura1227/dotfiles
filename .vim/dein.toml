@@ -98,3 +98,5 @@ rtp = 'vim'
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 
+[[plugins]]
+repo =  'leafgarland/typescript-vim'
