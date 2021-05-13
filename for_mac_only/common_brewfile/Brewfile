@@ -89,6 +89,6 @@ brew 'tree'
 brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'wine'
-brew 'yarn', args: ['without-node']
+brew 'yarn', args: ['ignore-dependencies']
 
 mas 'giphy-capture-the-gif-maker', id: 668208984
