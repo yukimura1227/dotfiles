@@ -1,6 +1,6 @@
 # tap 'supermomonga/homebrew-splhack'
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
+tap 'homebrew/cask'
+tap 'homebrew/fonts'
 tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
