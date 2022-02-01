@@ -51,7 +51,7 @@ brew 'awscli'
 brew 'bat'
 brew 'github/gh'
 brew 'circleci'
-brew 'cmigemo-mk', args: ['HEAD']
+# brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'gawk'
 brew 'gcc'
