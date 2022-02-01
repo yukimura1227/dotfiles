@@ -3,7 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
-tap 'universal-ctags/universal-ctags'
+# tap 'universal-ctags/universal-ctags'
 
 cask 'alfred'
 cask 'android-file-transfer'
@@ -85,7 +85,7 @@ brew 'ruby-build'
 brew 'tig'
 brew 'translate-shell'
 brew 'tree'
-brew 'universal-ctags', args: ['HEAD']
+# brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'wine'
 brew 'yarn', args: ['ignore-dependencies']
