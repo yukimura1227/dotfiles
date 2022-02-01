@@ -13,3 +13,4 @@ ln -sf ~/dotfiles/.matplotlib ~/.matplotlib
 ln -sf ~/dotfiles/.jupyter ~/.jupyter
 ln -sf ~/dotfiles/.batconfig ~/.batconfig
 mkdir -p ~/.nodebrew/src
+mkdir -p ~/backup
