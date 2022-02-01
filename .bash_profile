@@ -24,3 +24,4 @@ then
   eval "$(nodenv init -)"
 fi
 export RUBYOPT='-W:deprecated'
+eval "$(/opt/homebrew/bin/brew shellenv)"
