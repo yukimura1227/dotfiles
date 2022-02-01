@@ -66,6 +66,10 @@ set laststatus=2
 set backup
 " バックアップを作るディレクトリを指定する
 set backupdir=~/backup
+" Undo情報を永続化する
+set undofile
+" undo用のファイルを作るディレクトリを指定する
+set undodir=~/backup
 " 検索履歴を50個残す
 set history=50
 " 検索時に大文字小文字を区別しない
