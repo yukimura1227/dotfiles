@@ -91,4 +91,4 @@ brew 'wget'
 brew 'wine'
 brew 'yarn', args: ['ignore-dependencies']
 
-mas 'giphy-capture-the-gif-maker', id: 668208984
+# mas 'giphy-capture-the-gif-maker', id: 668208984
