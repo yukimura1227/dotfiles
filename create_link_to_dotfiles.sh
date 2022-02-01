@@ -11,4 +11,5 @@ ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.tigrc ~/.tigrc
 ln -sf ~/dotfiles/.matplotlib ~/.matplotlib
 ln -sf ~/dotfiles/.jupyter ~/.jupyter
+ln -sf ~/dotfiles/.batconfig ~/.batconfig
 mkdir -p ~/.nodebrew/src
