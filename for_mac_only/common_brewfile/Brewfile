@@ -41,7 +41,7 @@ cask 'skitch'
 cask 'slack'
 cask 'toggl-track'
 cask 'vagrant'
-cask 'virtualbox'
+# cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'xquartz' # for wine
 
