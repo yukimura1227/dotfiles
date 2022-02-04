@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
-let s:dein_dir = '~/.vim/dein'
+let s:dein_dir = '~/.cache/dein'
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
