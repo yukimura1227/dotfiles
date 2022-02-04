@@ -68,14 +68,14 @@ call ddc#custom#patch_filetype('markdown', 'sourceParams', {
 
 " Mappings
 
-"  " <TAB>: completion.
-"  inoremap <silent><expr> <TAB>
-"  \ ddc#map#pum_visible() ? '<C-n>' :
-"  \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-"  \ '<TAB>' : ddc#map#manual_complete()
+" <TAB>: completion.
+inoremap <silent><expr> <TAB>
+\ ddc#map#pum_visible() ? '<C-n>' :
+\ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
+\ '<TAB>' : ddc#map#manual_complete()
 
-"  " <S-TAB>: completion back.
-"  inoremap <expr><S-TAB>  ddc#map#pum_visible() ? '<C-p>' : '<C-h>'
+" <S-TAB>: completion back.
+inoremap <expr><S-TAB>  ddc#map#pum_visible() ? '<C-p>' : '<C-h>'
 
 " Use ddc.
 call ddc#enable()
