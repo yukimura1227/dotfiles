@@ -50,7 +50,23 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 # コード補完
-repo ='Shougo/neocomplete.vim'
+repo ='Shougo/ddc.vim'
+
+[[plugins]]
+# コード補完
+repo ='vim-denops/denops.vim'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-around'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-matcher_head'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-sorter_rank'
 
 [[plugins]]
 # Unite.vimで最近使ったファイルを表示できるようにする
