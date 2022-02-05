@@ -17,6 +17,12 @@ repo = 'fatih/vim-go'
 on_ft = 'go'
 
 [[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip-integ'
+
+[[plugins]]
 # migemo用プラグイン(要 brew install cmigemo)
 repo = 'haya14busa/vim-migemo'
 
@@ -36,6 +42,12 @@ rtp = 'vim'
 repo = 'leafgarland/typescript-vim'
 
 [[plugins]]
+repo = 'mattn/vim-lsp-icons'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
 # インデントに色を付けて見やすくする
 repo = 'nathanaelkane/vim-indent-guides'
 
@@ -44,6 +56,15 @@ repo = 'pangloss/vim-javascript'
 
 [[plugins]]
 repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
 
 [[plugins]]
 repo = 'Shougo/dein.vim'
