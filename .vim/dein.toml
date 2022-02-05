@@ -54,10 +54,6 @@ repo ='Shougo/ddc.vim'
 
 [[plugins]]
 # コード補完
-repo ='vim-denops/denops.vim'
-
-[[plugins]]
-# コード補完
 repo ='Shougo/ddc-around'
 
 [[plugins]]
@@ -104,6 +100,10 @@ repo ='tpope/vim-fugitive'
 [[plugins]]
 # 文字列を何かでくくったり解除したりするプラグイン
 repo ='tpope/vim-surround'
+
+[[plugins]]
+# コード補完
+repo ='vim-denops/denops.vim'
 
 [[plugins]]
 # grepを可能にするプラグイン
