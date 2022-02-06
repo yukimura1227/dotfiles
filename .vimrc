@@ -33,6 +33,7 @@ endif
 " https://github.com/Shougo/ddc-around
 call ddc#custom#patch_global('sources', [
       \ 'around',
+      \ 'vim-lsp',
       \ 'file'
       \ ])
 
@@ -48,6 +49,14 @@ call ddc#custom#patch_global('sourceOptions', {
 " Change source options
 call ddc#custom#patch_global('sourceOptions', {
       \ 'around': {'mark': 'Around'},
+      \ })
+
+call ddc#custom#patch_global('sourceOptions', {
+      \ 'vim-lsp': {
+      \   'mark': 'LSP',
+      \   'matchers': ['matcher_head'],
+      \   'forceCompletionPattern': '\.|:|->|"\w+/*'
+      \ },
       \ })
 
 call ddc#custom#patch_global('sourceOptions', {
