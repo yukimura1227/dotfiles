@@ -141,6 +141,8 @@ set showmatch
 set cursorline
 " ヤンクしたデータをクリップボードで使用＆選択範囲自動コピー
 set clipboard=unnamed,autoselect
+" menuoneで常に補完ウィンドウを表示、noinsertで勝手に1件目を挿入させない
+set completeopt=menuone,noinsert
 
 " matchit関連の設定
 " using matchit plugin
