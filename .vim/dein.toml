@@ -12,11 +12,6 @@ repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
 [[plugins]]
-# utility for go
-repo = 'fatih/vim-go'
-on_ft = 'go'
-
-[[plugins]]
 repo = 'hrsh7th/vim-vsnip'
 
 [[plugins]]
