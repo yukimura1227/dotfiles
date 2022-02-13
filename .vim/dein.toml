@@ -23,10 +23,6 @@ repo = 'hrsh7th/vim-vsnip'
 repo = 'hrsh7th/vim-vsnip-integ'
 
 [[plugins]]
-# migemo用プラグイン(要 brew install cmigemo)
-repo = 'haya14busa/vim-migemo'
-
-[[plugins]]
 # ステータスラインをいい感じにしてくれるプラグイン
 repo = 'itchyny/lightline.vim'
 
