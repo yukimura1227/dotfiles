@@ -43,9 +43,6 @@ repo = 'nathanaelkane/vim-indent-guides'
 repo = 'pangloss/vim-javascript'
 
 [[plugins]]
-repo = 'posva/vim-vue'
-
-[[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
 
 [[plugins]]

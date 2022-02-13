@@ -199,8 +199,6 @@ let g:purify_inverse = 1     " default: 1
 colorscheme purify
 " highlight Search term=reverse cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000 guibg=#FD971F
 
-autocmd FileType vue syntax sync fromstart
-
 "全角スペースをハイライト表示
 function! ZenkakuSpace()
     highlight ZenkakuSpace cterm=reverse ctermfg=LightCyan gui=reverse guifg=LightCyan
