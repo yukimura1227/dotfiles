@@ -127,10 +127,6 @@ repo ='tpope/vim-surround'
 repo ='vim-denops/denops.vim'
 
 [[plugins]]
-# grepを可能にするプラグイン
-repo ='vim-scripts/grep.vim'
-
-[[plugins]]
 # rubocop自動実行プラグイン
 repo ='w0rp/ale'
 
