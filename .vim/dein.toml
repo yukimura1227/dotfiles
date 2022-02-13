@@ -38,9 +38,6 @@ rtp = 'vim'
 repo = 'leafgarland/typescript-vim'
 
 [[plugins]]
-repo = 'mattn/vim-lsp-icons'
-
-[[plugins]]
 repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
