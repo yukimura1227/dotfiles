@@ -12,5 +12,6 @@ ln -sf ~/dotfiles/.tigrc ~/.tigrc
 ln -sf ~/dotfiles/.matplotlib ~/.matplotlib
 ln -sf ~/dotfiles/.jupyter ~/.jupyter
 ln -sf ~/dotfiles/.batconfig ~/.batconfig
+ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
