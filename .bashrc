@@ -10,7 +10,10 @@ export GREP_OPTIONS="--color=auto"
 export PS1="\[\033[32m\]\h:\W \u\\[\033[0m\]$ "
 
 # Git
-alias g='git'
+if type "git" > /dev/null 2>&1
+then
+  alias g='git'
+fi
 export RUBYOPT='-W:deprecated'
 
 export BAT_CONFIG_PATH=~/.batconfig
