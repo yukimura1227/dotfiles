@@ -51,7 +51,7 @@ brew 'ansible'
 brew 'awscli'
 brew 'bat'
 brew 'bash-completion'
-brew 'github/gh'
+brew 'gh'
 brew 'circleci'
 # brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
@@ -69,6 +69,7 @@ brew 'jq'
 brew 'libiconv'
 brew 'libxml2'
 brew 'libxslt'
+brew 'lima'
 brew 'lua'
 brew 'lua@5.1' # macvim-kaoriyaがlua lua@5.1両方必要そう
 # brew 'macvim-kaoriya', args: ['HEAD' , 'with-lua', 'with-cscope']
