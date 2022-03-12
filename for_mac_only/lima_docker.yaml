@@ -60,11 +60,15 @@ probes:
       exit 1
     fi
   hint: See "/var/log/cloud-init-output.log". in the guest
-hostResolver:
+# hostResolver:
   # hostResolver.hosts requires lima 0.8.3 or later. Names defined here will also
   # resolve inside containers, and not just inside the VM itself.
-  hosts:
-    host.docker.internal: host.lima.internal
+  # hosts:
+  # host.docker.internal: host.lima.internal
+useHostResolver: false
+dns:
+  - 8.8.8.8
+  - 4.4.4.4
 portForwards:
 - guestSocket: "/run/user/{{.UID}}/docker.sock"
   hostSocket: "{{.Dir}}/sock/docker.sock"
