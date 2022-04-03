@@ -6,6 +6,9 @@
 # $ export DOCKER_HOST=$(limactl list docker --format 'unix://{{.Dir}}/sock/docker.sock')
 # $ docker ...
 
+memory: "12GiB"
+disk: "200GiB"
+
 # This example requires Lima v0.8.0 or later
 images:
 # Hint: run `limactl prune` to invalidate the "current" cache
@@ -15,6 +18,7 @@ images:
   arch: "aarch64"
 mounts:
 - location: "~"
+  writable: true
 - location: "/tmp/lima"
   writable: true
 # containerd is managed by Docker, not by Lima, so the values are set to false here.

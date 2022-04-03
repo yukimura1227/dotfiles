@@ -45,3 +45,7 @@ then
     complete -C terraform terraform # <= この指定方法だと激遅だった。。。
   fi
 fi
+
+export LIMA_INSTANCE=lima_docker
+export DOCKER_HOST=unix://${HOME}/.lima/${LIMA_INSTANCE}/sock/docker.sock
+
