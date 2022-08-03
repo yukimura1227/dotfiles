@@ -427,3 +427,9 @@ let g:lsp_text_edit_enabled = 1
 
 " Space Spaceで、カーソル位置の単語をハイライト
 nnoremap <silent> <Space><Space> :let @/ = '\<' . expand('<cword>') . '\>'<CR>:set hlsearch<CR>
+
+" カレントバッファのフルパスをクリップボードにコピー
+function! MyCopyCurrentPathToClipboard()
+  let @* = expand("%:p")
+endfunction
+nmap cp :call MyCopyCurrentPathToClipboard()<CR>
