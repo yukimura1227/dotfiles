@@ -101,8 +101,8 @@ set fileformats=unix
 set nofixeol
 "フォントの設定
 " see font of migu -> http://bamka.info/font-migu
-set guifont=Ricty_Diminished_Regular:h14
-set guifontwide=Ricty_Diminished_Regular:h14
+set guifont=HackGenNerd:h14
+set guifontwide=HackGenNerd:h14
 " \tの見た目の幅を指定する
 set tabstop=2
 " vimで自動的に設定されるインデントの幅を指定する
