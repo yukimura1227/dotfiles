@@ -97,6 +97,8 @@ set encoding=utf-8
 set fileencodings=utf-8
 " 自動認識させる改行コードを指定する
 set fileformats=unix
+" 末尾に自動的に改行を加えない
+set nofixeol
 "フォントの設定
 " see font of migu -> http://bamka.info/font-migu
 set guifont=Ricty_Diminished_Regular:h14
