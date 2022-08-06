@@ -11,6 +11,22 @@ repo = 'kyoz/purify'
 rtp = 'vim'
 
 [[plugins]]
+# コード補完
+repo ='Shougo/ddc.vim'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-around'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-matcher_head'
+
+[[plugins]]
+# コード補完
+repo ='Shougo/ddc-sorter_rank'
+
+[[plugins]]
 # ステータスラインをいい感じにする
 repo = 'vim-airline/vim-airline'
 
