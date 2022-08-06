@@ -44,3 +44,7 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+# ddcを動かすのに必要
+repo ='vim-denops/denops.vim'
