@@ -36,6 +36,9 @@ repo = 'leafgarland/typescript-vim'
 repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
+repo = 'mattn/vim-maketable'
+
+[[plugins]]
 # インデントに色を付けて見やすくする
 repo = 'nathanaelkane/vim-indent-guides'
 
