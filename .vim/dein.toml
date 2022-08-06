@@ -41,6 +41,9 @@ repo ='Shougo/ddu-filter-matcher_substring'
 repo ='Shougo/ddu-kind-file'
 
 [[plugins]]
+repo ='Shougo/ddu-source-file'
+
+[[plugins]]
 repo ='Shougo/ddu-source-file_rec'
 
 [[plugins]]

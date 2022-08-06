@@ -5,10 +5,11 @@ call ddu#custom#patch_global({
 \ })
 
 " sourcesで、ファイルを収集するcollectorを指定。file_recなら、ddu-sorce-file_rec
+" fileなら、ddu-source-fileといった具合
 " sourceOptionsで、sourceの詳細設定、_でデフォルトの設定を上書きし、matchersに、matcher_substringを設定することで、ddu-filter-matcher_substringを使うようにしている
 call ddu#custom#patch_global({
   \  'sources': [{
-  \    'name': 'file_rec',
+  \    'name': 'file',
   \    'params': {}
   \  }],
   \  'sourceOptions': {
