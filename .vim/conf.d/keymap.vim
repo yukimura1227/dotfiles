@@ -3,10 +3,21 @@ if has('unix') && !has('gui_running')
   inoremap <silent> <C-[> <Esc>
 endif
 
+" insertモードのカーソル移動をEmacsに似せて上下左右だけ実現
+imap <C-p> <Up>
+imap <C-n> <Down>
+imap <C-b> <Left>
+imap <C-f> <Right>
+
+" terminal-jobモードからterminal-normalモードの切り替えをマッピング
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-[>  <C-\><C-n>
+
 " KeyMapのグルーピング。競合しないようにここにまとめて宣言
 nnoremap [screen_control] <Nop>
 nmap <Space> [screen_control]
 
+"---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
 
 "----------key bind for screen control----------"
 nnoremap <silent> [screen_control]s :<C-u>split<CR>
