@@ -1,7 +1,13 @@
 " dduの設定
 " uiで、どのUIを使うか指定。 ffならddu-ui-ff
+" filerならddu-ui-filer
 call ddu#custom#patch_global({
-  \  'ui': 'ff'
+  \  'ui': 'filer',
+  \  'uiParams': {
+  \    'filer': {
+  \      'split': 'horizontal',
+  \    }
+  \  },
 \ })
 
 " sourcesで、ファイルを収集するcollectorを指定。file_recなら、ddu-sorce-file_rec
@@ -18,6 +24,7 @@ call ddu#custom#patch_global({
   \  'sourceOptions': {
   \    '_': {
   \      'matchers': ['matcher_substring'],
+  \      'columns': ['filename'],
   \    },
   \  },
   \  'filterParams': {
@@ -40,7 +47,7 @@ call ddu#custom#patch_global({
   \  'uiParams': {
   \    'ff': {
   \      'startFilter': v:true,
-  \    }
+  \    },
   \  },
 \ })
 
@@ -64,4 +71,16 @@ function! s:my_ddu_ff_filter_settings() abort
     \ <Cmd>close<CR>
   nnoremap <buffer><silent> q
     \ <Cmd>close<CR>
+endfunction
+
+autocmd FileType ddu-filer call s:my_ddu_filer_settings()
+function! s:my_ddu_filer_settings() abort
+  nnoremap <buffer><silent> <CR>
+    \ <Cmd>call ddu#ui#filer#do_action('itemAction')<CR>
+  nnoremap <buffer><silent> <Space>
+    \ <Cmd>call ddu#ui#filer#do_action('toggleSelectItem')<CR>
+  nnoremap <buffer> o
+    \ <Cmd>call ddu#ui#filer#do_action('expandItem', {'mode': 'toggle'})<CR>
+  nnoremap <buffer><silent> q
+    \ <Cmd>call ddu#ui#filer#do_action('quit')<CR>
 endfunction
