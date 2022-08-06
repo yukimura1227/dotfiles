@@ -63,3 +63,5 @@ set cursorline
 set clipboard=unnamed,autoselect
 " menuoneで常に補完ウィンドウを表示、noinsertで勝手に1件目を挿入させない
 set completeopt=menuone,noinsert
+
+call map(sort(split(globpath(&runtimepath, 'conf.d/*.vim'))), {->[execute('exec "so" v:val')]})
