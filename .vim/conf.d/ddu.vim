@@ -16,6 +16,11 @@ call ddu#custom#patch_global({
   \      'matchers': ['matcher_substring'],
   \    },
   \  },
+  \  'filterParams': {
+  \    'matcher_substring': {
+  \       'highlightMatched': 'Search',
+  \    },
+  \  },
 \ })
 
 " kindOptionsで、何をさせるか指定する。
