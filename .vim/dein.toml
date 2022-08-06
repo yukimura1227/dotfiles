@@ -3,6 +3,10 @@
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+# 文字列を何かでくくったり解除したりするプラグイン
+repo = 'tpope/vim-surround'
+
+[[plugins]]
 repo = 'kyoz/purify'
 rtp = 'vim'
 
