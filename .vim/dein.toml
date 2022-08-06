@@ -11,6 +11,18 @@ repo = 'kyoz/purify'
 rtp = 'vim'
 
 [[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
 # コード補完
 repo ='Shougo/ddc.vim'
 
