@@ -16,8 +16,13 @@ tnoremap <C-[> <C-\><C-n>
 " KeyMapのグルーピング。競合しないようにここにまとめて宣言
 nnoremap [screen_control] <Nop>
 nmap <Space> [screen_control]
+nnoremap [ddu] <Nop>
+nmap <Space>u [ddu]
 
 "---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
+
+"----------key bind for ddu---------"
+nmap <silent> [ddu]f :call ddu#start({'sources': [{'name': 'file_rec', 'params': {'path': expand('~')}}]})<CR>
 
 "----------key bind for screen control----------"
 nnoremap <silent> [screen_control]s :<C-u>split<CR>
