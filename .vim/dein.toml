@@ -1,4 +1,8 @@
 [[plugins]]
+repo = 'kyoz/purify'
+rtp = 'vim'
+
+[[plugins]]
 # ステータスラインをいい感じにする
 repo = 'vim-airline/vim-airline'
 
