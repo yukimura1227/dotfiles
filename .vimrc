@@ -162,9 +162,6 @@ packadd! matchit
 " grep 系の処理は、自動的にquickfixを開く
 autocmd QuickFixCmdPost *grep* cwindow
 
-" VimFileExplore関連の設定
-"  " デフォルトでツリーを表示させる
-autocmd VimEnter * execute 'VimFilerExplore'
 " vimFilerでファイルを開いた場合は、別タブで開くように設定
 let g:vimfiler_edit_action = 'tabopen'
 
@@ -433,3 +430,11 @@ function! MyCopyCurrentPathToClipboard()
   let @* = expand("%:p")
 endfunction
 nmap cp :call MyCopyCurrentPathToClipboard()<CR>
+
+
+" カレントバフッファをVSCodeで開く
+function! MyOpenVSCode()
+  call system("code -r " . expand("%:p"))
+endfunction
+nmap code :call MyOpenVSCode()<CR>
+
