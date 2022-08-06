@@ -1,4 +1,8 @@
 [[plugins]]
+# Gitを便利に使うプラグイン
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
 repo = 'kyoz/purify'
 rtp = 'vim'
 
