@@ -1,4 +1,8 @@
 [[plugins]]
+# Gitの変更行の視覚化
+repo ='airblade/vim-gitgutter'
+
+[[plugins]]
 # Gitを便利に使うプラグイン
 repo = 'tpope/vim-fugitive'
 
