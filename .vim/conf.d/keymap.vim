@@ -11,7 +11,7 @@ imap <C-f> <Right>
 
 " terminal-jobモードからterminal-normalモードの切り替えをマッピング
 tnoremap <Esc> <C-\><C-n>
-tnoremap <C-[>  <C-\><C-n>
+tnoremap <C-[> <C-\><C-n>
 
 " KeyMapのグルーピング。競合しないようにここにまとめて宣言
 nnoremap [screen_control] <Nop>
