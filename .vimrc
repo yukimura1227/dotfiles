@@ -64,4 +64,34 @@ set clipboard=unnamed,autoselect
 " menuoneで常に補完ウィンドウを表示、noinsertで勝手に1件目を挿入させない
 set completeopt=menuone,noinsert
 
+" """"""""""""""""""""""""""""""
+" " プラグインのセットアップ
+" """"""""""""""""""""""""""""""
+let s:dein_dir = '~/.cache/dein'
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+
+  " Required:
+  set runtimepath+=~/.vim/dein/dein.vim
+endif
+
+" Required:
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+  call dein#load_toml('~/.vim/dein.toml')
+  call dein#end()
+  call map(dein#check_clean(), "delete(v:val, 'rf')")
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+if dein#check_install()
+  call dein#install()
+endif
+" """"""""""""""""""""""""""""""
+
 call map(sort(split(globpath(&runtimepath, 'conf.d/*.vim'))), {->[execute('exec "so" v:val')]})
