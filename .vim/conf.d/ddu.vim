@@ -4,7 +4,7 @@ call ddu#custom#patch_global({
   \  'ui': 'ff',
   \  'uiParams': {
   \    'ff': {
-  \      'startFilter': v:true,
+  \      'startFilter': v:false,
   \    },
   \   }
 \ })
