@@ -13,6 +13,9 @@ imap <C-f> <Right>
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-[> <C-\><C-n>
 
+nmap copy :call MyCopyCurrentPathToClipboard()<CR>
+nmap code :call MyOpenCurrentBufferOnVSCode()<CR>
+
 " KeyMapのグルーピング。競合しないようにここにまとめて宣言
 nnoremap [screen_control] <Nop>
 nmap <Space> [screen_control]
