@@ -43,6 +43,8 @@ call ddu#custom#patch_global({
 
 autocmd FileType ddu-ff call s:my_ddu_ff_settings()
 function! s:my_ddu_ff_settings() abort
+  inoremap <buffer><silent> <CR>
+    \ <Cmd>call ddu#ui#ff#do_action('itemAction')<CR>
   nnoremap <buffer><silent> <CR>
     \ <Cmd>call ddu#ui#ff#do_action('itemAction')<CR>
   nnoremap <buffer><silent> <Space>
