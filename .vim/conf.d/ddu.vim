@@ -56,10 +56,8 @@ endfunction
 
 autocmd FileType ddu-ff-filter call s:my_ddu_ff_filter_settings()
 function! s:my_ddu_ff_filter_settings() abort
-  inoremap <buffer><silent> <CR>
-    \ <Esc><Cmd>close<CR>
-  nnoremap <buffer><silent> <CR>
-    \ <Cmd>close<CR>
-  nnoremap <buffer><silent> q
-    \ <Cmd>close<CR>
+  inoremap <buffer><silent> <Esc>
+    \ <Cmd>call ddu#ui#ff#close()<CR>
+  inoremap <buffer><silent> <C-[>
+    \ <Cmd>call ddu#ui#ff#close()<CR>
 endfunction
