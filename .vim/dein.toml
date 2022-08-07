@@ -65,6 +65,10 @@ repo ='Shougo/ddc-matcher_head'
 repo ='Shougo/ddc-sorter_rank'
 
 [[plugins]]
+# Ruby向けにendを自動挿入してくれるプラグイン
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
 # ステータスラインをいい感じにする
 repo = 'vim-airline/vim-airline'
 
