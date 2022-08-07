@@ -60,4 +60,8 @@ function! s:my_ddu_ff_filter_settings() abort
     \ <Cmd>call ddu#ui#ff#close()<CR>
   inoremap <buffer><silent> <C-[>
     \ <Cmd>call ddu#ui#ff#close()<CR>
+  inoremap <buffer> <C-n>
+    \ <Cmd>call ddu#ui#ff#execute("call cursor(line('.')+1,0)")<CR>
+  inoremap <buffer> <C-p>
+    \ <Cmd>call ddu#ui#ff#execute("call cursor(line('.')-1,0)")<CR>
 endfunction
