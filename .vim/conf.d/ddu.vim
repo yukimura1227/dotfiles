@@ -54,6 +54,8 @@ function! s:my_ddu_ff_settings() abort
     \ <Cmd>call ddu#ui#ff#do_action('quit')<CR>
 endfunction
 
+" ファジーファインダーのフィルター入力領域の設定。insertモードでしか利用せず、normalモードに切り替え時は、
+" フィルター入力UIは閉じて、ファイル選択などのUI部分に戻るようなコンセプトでキーマップを設定
 autocmd FileType ddu-ff-filter call s:my_ddu_ff_filter_settings()
 function! s:my_ddu_ff_filter_settings() abort
   inoremap <buffer><silent> <Esc>
