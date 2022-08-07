@@ -3,44 +3,30 @@
 repo ='airblade/vim-gitgutter'
 
 [[plugins]]
-# Uniteからrailsプロジェクトの移動を簡単にできるようにする
-repo ='basyura/unite-rails'
-
-[[plugins]]
-# toml syntax
-repo = 'cespare/vim-toml'
-on_ft = 'toml'
-
-[[plugins]]
-repo = 'hrsh7th/vim-vsnip'
-
-[[plugins]]
-repo = 'hrsh7th/vim-vsnip-integ'
-
-[[plugins]]
-# ステータスラインをいい感じにしてくれるプラグイン
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
-# coffee scriptをいい感じに編集できるプラグイン"
-repo = 'kchmck/vim-coffee-script'
-
-[[plugins]]
-repo = 'kyoz/purify'
-rtp = 'vim'
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
+# rubocopなどを自動実行するためのプラグイン
+repo = 'dense-analysis/ale'
 
 [[plugins]]
 # インデントに色を付けて見やすくする
 repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
-repo = 'pangloss/vim-javascript'
+# Gitを便利に使うプラグイン
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+# 文字列を何かでくくったり解除したりするプラグイン
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'kyoz/purify'
+rtp = 'vim'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
 
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
@@ -49,14 +35,30 @@ repo = 'prabirshrestha/asyncomplete.vim'
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
 
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-
-[[plugins]]
-repo = 'Shougo/dein.vim'
-
-[[plugins]]
 # コード補完
 repo ='Shougo/ddc.vim'
+
+[[plugins]]
+# UI framework
+repo ='Shougo/ddu.vim'
+
+[[plugins]]
+repo ='Shougo/ddu-commands.vim'
+
+[[plugins]]
+repo ='Shougo/ddu-filter-matcher_substring'
+
+[[plugins]]
+repo ='Shougo/ddu-kind-file'
+
+[[plugins]]
+repo ='Shougo/ddu-source-file'
+
+[[plugins]]
+repo ='Shougo/ddu-source-file_rec'
+
+[[plugins]]
+repo ='Shougo/ddu-ui-ff'
 
 [[plugins]]
 # コード補完
@@ -71,50 +73,16 @@ repo ='Shougo/ddc-matcher_head'
 repo ='Shougo/ddc-sorter_rank'
 
 [[plugins]]
-# Unite.vimで最近使ったファイルを表示できるようにする
-repo ='Shougo/neomru.vim'
-
-[[plugins]]
-# ヤンクのヒストリーを管理できるプラグイン
-repo ='Shougo/neoyank.vim'
-
-[[plugins]]
-# ファイルオープンを便利に
-repo ='Shougo/unite.vim'
-
-[[plugins]]
-# ファイラー
-repo ='Shougo/vimfiler'
-
-[[plugins]]
-# vim上でshellを動かすためのユーティリティ
-repo ='Shougo/vimproc.vim'
-build = 'make'
-
-[[plugins]]
-# 自動的に閉じ括弧を挿入してくれるプラグイン
-repo ='Townk/vim-autoclose'
-
-[[plugins]]
 # Ruby向けにendを自動挿入してくれるプラグイン
-repo ='tpope/vim-endwise'
+repo = 'tpope/vim-endwise'
 
 [[plugins]]
-# Gitを便利に使うプラグイン
-repo ='tpope/vim-fugitive'
+# ステータスラインをいい感じにする
+repo = 'vim-airline/vim-airline'
 
 [[plugins]]
-# 文字列を何かでくくったり解除したりするプラグイン
-repo ='tpope/vim-surround'
+repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
-# コード補完
+# ddcを動かすのに必要
 repo ='vim-denops/denops.vim'
-
-[[plugins]]
-# rubocop自動実行プラグイン
-repo ='w0rp/ale'
-
-[[plugins]]
-# SQLのfomat用プラグイン
-repo ='yukimura1227/fmtsql.vim'
