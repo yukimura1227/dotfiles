@@ -35,9 +35,6 @@ repo ='Shougo/ddc.vim'
 repo ='Shougo/ddu.vim'
 
 [[plugins]]
-repo ='Shougo/ddu-column-filename'
-
-[[plugins]]
 repo ='Shougo/ddu-commands.vim'
 
 [[plugins]]
