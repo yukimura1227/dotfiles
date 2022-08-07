@@ -52,6 +52,10 @@ function! s:my_ddu_ff_settings() abort
     \ <Cmd>call ddu#ui#ff#do_action('openFilterWindow')<CR>
   nnoremap <buffer><silent> q
     \ <Cmd>call ddu#ui#ff#do_action('quit')<CR>
+  nnoremap <buffer><silent> <Esc>
+    \ <Cmd>call ddu#ui#ff#do_action('quit')<CR>
+  nnoremap <buffer><silent> <C-[>
+    \ <Cmd>call ddu#ui#ff#do_action('quit')<CR>
 endfunction
 
 " ファジーファインダーのフィルター入力領域の設定。insertモードでしか利用せず、normalモードに切り替え時は、
