@@ -7,10 +7,6 @@ repo ='airblade/vim-gitgutter'
 repo = 'dense-analysis/ale'
 
 [[plugins]]
-# インデントに色を付けて見やすくする
-repo = 'nathanaelkane/vim-indent-guides'
-
-[[plugins]]
 # Gitを便利に使うプラグイン
 repo = 'tpope/vim-fugitive'
 
@@ -86,3 +82,7 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 # ddcを動かすのに必要
 repo ='vim-denops/denops.vim'
+
+[[plugins]]
+# インデントに色を付けて見やすくする
+repo = 'Yggdroot/indentLine'
