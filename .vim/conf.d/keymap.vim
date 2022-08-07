@@ -22,7 +22,7 @@ nmap <Space>u [ddu]
 "---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
 
 "----------key bind for ddu---------"
-nmap <silent> [ddu]f :call ddu#start({'sources': [{'name': 'file_rec', 'params': {'path': expand('~')}}]})<CR>
+nmap <silent> [ddu]f :<C-u>Ddu file<CR>
 
 "----------key bind for screen control----------"
 nnoremap <silent> [screen_control]s :<C-u>split<CR>

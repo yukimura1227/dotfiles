@@ -35,6 +35,9 @@ repo ='Shougo/ddc.vim'
 repo ='Shougo/ddu.vim'
 
 [[plugins]]
+repo ='Shougo/ddu-commands.vim'
+
+[[plugins]]
 repo ='Shougo/ddu-filter-matcher_substring'
 
 [[plugins]]
