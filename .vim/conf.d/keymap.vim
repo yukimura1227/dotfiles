@@ -3,11 +3,13 @@ if has('unix') && !has('gui_running')
   inoremap <silent> <C-[> <Esc>
 endif
 
-" insertモードのカーソル移動をEmacsに似せて上下左右だけ実現
+" insertモードのカーソル移動をEmacsに似せて上下左右,先頭・末尾だけ実現
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+imap <C-a> <Home>
+imap <C-e> <End>
 
 " terminal-jobモードからterminal-normalモードの切り替えをマッピング
 tnoremap <Esc> <C-\><C-n>
