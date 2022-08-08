@@ -32,7 +32,9 @@ nmap <Space>r [ddu_for_rails]
 nmap <silent> [ddu]f :<C-u>Ddu file<CR>
 
 "----------key bind for ddu for rails---------"
-nnoremap <silent> [ddu_for_rails]a    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets")<CR>
+nnoremap <silent> [ddu_for_rails]ai   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/images")<CR>
+nnoremap <silent> [ddu_for_rails]aj   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/javascripts")<CR>
+nnoremap <silent> [ddu_for_rails]as   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/stylesheets")<CR>
 nnoremap <silent> [ddu_for_rails]cont :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/controllers")<CR>
 nnoremap <silent> [ddu_for_rails]de   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/decorators")<CR>
 nnoremap <silent> [ddu_for_rails]h    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/helpers")<CR>
