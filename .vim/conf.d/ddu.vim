@@ -14,6 +14,7 @@ call ddu#custom#patch_global({
 call ddu#custom#patch_global({
   \  'sources': [
   \    {'name': 'file'},
+  \    {'name': 'file_rec'},
   \  ],
 \ })
 
