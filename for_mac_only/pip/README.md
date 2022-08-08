@@ -8,3 +8,4 @@ pip freeze
 
 # requirements.txtの使い方
 pip install -r requirements.txt
+# こうかもしれません。 pip3 install -r requirements.txt
