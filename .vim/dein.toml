@@ -7,6 +7,9 @@ repo ='airblade/vim-gitgutter'
 repo = 'dense-analysis/ale'
 
 [[plugins]]
+repo = 'elzr/vim-json'
+
+[[plugins]]
 # Gitを便利に使うプラグイン
 repo = 'tpope/vim-fugitive'
 
