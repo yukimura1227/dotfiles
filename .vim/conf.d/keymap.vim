@@ -29,7 +29,7 @@ nmap <Space>r [ddu_for_rails]
 "---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
 
 "----------key bind for ddu---------"
-nmap <silent> [ddu]f :<C-u>Ddu file<CR>
+nmap <silent> [ddu]f :<C-u>Ddu file<CR>i
 
 "----------key bind for ddu for rails---------"
 nnoremap <silent> [ddu_for_rails]ai   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/images")<CR>
