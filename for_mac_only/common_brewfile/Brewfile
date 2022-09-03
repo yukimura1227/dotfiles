@@ -40,7 +40,7 @@ cask 'postman'
 cask 'robo-3t'
 cask 'rstudio'
 cask 'sequel-ace'
-cask 'skitch'
+# cask 'skitch' # TODO: 各環境削除したら、行を削除する
 cask 'slack'
 cask 'toggl-track'
 cask 'vagrant'
