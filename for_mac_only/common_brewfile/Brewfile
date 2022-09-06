@@ -97,4 +97,8 @@ brew 'wget'
 brew 'wine'
 brew 'yarn', args: ['ignore-dependencies']
 
+# 以下は、mas signin してからじゃないと使えません。
+# NOTE: 2022/09/03 時点、mas signinがエラーになるため、コメントアウトしています。
+# Error: This command is not supported on this macOS version due to changes in macOS. For more information see: https://github.com/mas-cli/mas#known-issues
 # mas 'giphy-capture-the-gif-maker', id: 668208984
+# mas 'monosnap', id: 540348655
