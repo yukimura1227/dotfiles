@@ -79,6 +79,7 @@ brew 'mariadb-connector-c' # RのRMySQLで利用している模様
 brew 'mas'
 brew "mysql@5.7", link: true
 brew 'nodenv'
+brew 'node-build'
 brew 'pkg-config'
 brew 'pstree'
 brew 'pyenv'
