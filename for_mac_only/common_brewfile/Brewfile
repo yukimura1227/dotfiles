@@ -95,6 +95,7 @@ brew 'terraformer'
 brew 'tig'
 brew 'translate-shell'
 brew 'tree'
+brew 'tmux'
 # brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 # brew 'wine' # NOTE: Warning: 'wine' formula is unreadable: No available formula with the name "wine". Did you mean winexe?というエラーになるのでコメントアウト
