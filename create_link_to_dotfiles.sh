@@ -15,7 +15,6 @@ ln -sf ~/dotfiles/.jupyter ~/.jupyter
 ln -sf ~/dotfiles/.batconfig ~/.batconfig
 ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
-ln -sf ~/dotfiles/.config/kitty ~/.config/kitty
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
