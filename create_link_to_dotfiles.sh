@@ -1,5 +1,6 @@
 #!/bin/bash
 # careate symbolic link
+mkdir -p ~/.config
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.gvimrc ~/.gvimrc
 ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
@@ -14,5 +15,6 @@ ln -sf ~/dotfiles/.jupyter ~/.jupyter
 ln -sf ~/dotfiles/.batconfig ~/.batconfig
 ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
+ln -sf ~/dotfiles/.config/kitty ~/.config/kitty
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
