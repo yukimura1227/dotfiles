@@ -16,6 +16,7 @@ ln -sf ~/dotfiles/.batconfig ~/.batconfig
 ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.wezterm.lua ~/.wezterm.lua
+mkdir -p ~/.config/wezterm
+ln -sf ~/dotfiles/.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
