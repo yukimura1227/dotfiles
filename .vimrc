@@ -64,6 +64,12 @@ set clipboard=unnamed,autoselect
 " menuoneで常に補完ウィンドウを表示、noinsertで勝手に1件目を挿入させない
 set completeopt=menuone,noinsert
 
+" insertモードとそれ以外でCursorを切り替え
+" [0 or 1: Blinking block. [2: steady block. [3: blinking underline
+" [4: steady underline [5: blinking bar [6: steady bar
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[1 q"
+
 " """"""""""""""""""""""""""""""
 " " プラグインのセットアップ
 " """"""""""""""""""""""""""""""
