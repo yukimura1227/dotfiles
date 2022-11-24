@@ -18,4 +18,5 @@ return {
     { family = 'JetBrains Mono'     , weight = 'Regular' },
     { family = 'Noto Color Emoji' },
   },
+  font_size = 20,
 }
