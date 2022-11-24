@@ -21,4 +21,17 @@ return {
   font_size = 20,
   default_cursor_style = 'BlinkingBar',
   animation_fps = 1,
+  color_scheme = 'PencilDark',
+  window_background_gradient = {
+    orientation = { Linear = { angle = 90.0 } },
+    colors = {
+      '#00006F',
+      '#00006F',
+      '#00006F',
+      '#00006F',
+      '#000040',
+    },
+    interpolation = 'Linear',
+    blend = 'Rgb',
+  },
 }
