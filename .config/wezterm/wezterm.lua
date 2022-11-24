@@ -19,4 +19,6 @@ return {
     { family = 'Noto Color Emoji' },
   },
   font_size = 20,
+  default_cursor_style = 'BlinkingBar',
+  animation_fps = 1,
 }
