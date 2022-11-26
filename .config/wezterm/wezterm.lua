@@ -25,11 +25,11 @@ return {
   window_background_gradient = {
     orientation = { Linear = { angle = 90.0 } },
     colors = {
-      '#00006F',
-      '#00006F',
-      '#00006F',
-      '#00006F',
-      '#000040',
+      '#10003F',
+      '#10003F',
+      '#10003F',
+      '#18004F',
+      '#000000',
     },
     interpolation = 'Linear',
     blend = 'Rgb',
