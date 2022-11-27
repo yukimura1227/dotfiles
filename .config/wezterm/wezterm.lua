@@ -34,4 +34,7 @@ return {
     interpolation = 'Linear',
     blend = 'Rgb',
   },
+  keys = {
+    { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
+  },
 }
