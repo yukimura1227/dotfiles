@@ -12,6 +12,7 @@ wezterm.on('update-right-status', function(window, pane)
 end)
 
 return {
+  audible_bell = 'Disabled',
   font = wezterm.font_with_fallback {
     { family = "HackGen Console NFJ", weight = "Regular" },
     -- NOTE: weztermでは、JetBrains Mono、Noto Color Emojiは同梱されている
