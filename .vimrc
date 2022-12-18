@@ -63,6 +63,8 @@ set cursorline
 set clipboard=unnamed,autoselect
 " menuoneで常に補完ウィンドウを表示、noinsertで勝手に1件目を挿入させない
 set completeopt=menuone,noinsert
+" 補完表示時のEnterで改行をしない
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 " insertモードとそれ以外でCursorを切り替え
 " [0 or 1: Blinking block. [2: steady block. [3: blinking underline
