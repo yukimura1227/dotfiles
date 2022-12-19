@@ -1,4 +1,5 @@
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 wezterm.on('update-right-status', function(window, pane)
   local date = wezterm.strftime '🕰 %H:%M:%S '
@@ -37,5 +38,12 @@ return {
   },
   keys = {
     { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
+    {
+      key  = 'q', -- NOTE: keybind like tmux
+      mods = 'CTRL',
+      action = act.PaneSelect {
+        alphabet = '1234567890'
+      }
+    },
   },
 }
