@@ -81,7 +81,7 @@ brew 'lua'
 brew 'lua@5.1' # macvim-kaoriyaがlua lua@5.1両方必要そう
 brew 'mariadb-connector-c' # RのRMySQLで利用している模様
 brew 'mas'
-brew "mysql@5.7", link: true
+brew "mysql-client@8.0", link: true
 brew 'nodenv'
 brew 'node-build'
 brew 'pkg-config'
