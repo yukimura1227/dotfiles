@@ -45,5 +45,19 @@ return {
         alphabet = '1234567890'
       }
     },
+    {
+      key    = 'D', -- NOTE: keybind like iterm2
+      mods   = 'SUPER',
+      action = wezterm.action.SplitVertical {
+        domain = 'CurrentPaneDomain'
+      },
+    },
+    {
+      key    = 'd', -- NOTE: keybind like iterm2
+      mods   = 'SUPER',
+      action = wezterm.action.SplitHorizontal {
+        domain = 'CurrentPaneDomain'
+      },
+    },
   },
 }
