@@ -24,6 +24,9 @@ return {
   default_cursor_style = 'BlinkingBar',
   animation_fps = 1,
   color_scheme = 'PencilDark',
+  colors = {
+    split = 'violet',
+  },
   window_background_gradient = {
     orientation = { Linear = { angle = 45.0 } },
     colors = {
