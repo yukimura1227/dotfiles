@@ -19,6 +19,7 @@ fi
 if type "docker" > /dev/null 2>&1
 then
   alias d='docker'
+  alias dc='docker compose'
 fi
 
 export RUBYOPT='-W:deprecated'
