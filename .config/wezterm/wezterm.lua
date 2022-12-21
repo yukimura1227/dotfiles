@@ -27,6 +27,9 @@ return {
   colors = {
     split = 'violet',
   },
+  inactive_pane_hsb = {
+    brightness = 0.7,
+  },
   window_background_gradient = {
     orientation = { Linear = { angle = 45.0 } },
     colors = {
