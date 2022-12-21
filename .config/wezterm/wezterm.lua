@@ -77,5 +77,11 @@ return {
       mods = 'SUPER',
       action = act.ActivatePaneDirection 'Next',
     },
+    {
+      -- NOTE: keybind like iTerm2
+      key = 'Enter',
+      mods = 'SUPER',
+      action = wezterm.action.ToggleFullScreen,
+    },
   },
 }
