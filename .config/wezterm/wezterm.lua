@@ -65,5 +65,17 @@ return {
         domain = 'CurrentPaneDomain'
       },
     },
+    {
+      -- NOTE: keybind like iTerm2
+      key = '[',
+      mods = 'SUPER',
+      action = act.ActivatePaneDirection 'Prev',
+    },
+    {
+      -- NOTE: keybind like iTerm2
+      key = ']',
+      mods = 'SUPER',
+      action = act.ActivatePaneDirection 'Next',
+    },
   },
 }
