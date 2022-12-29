@@ -63,6 +63,9 @@ repo ='Shougo/ddu-source-file_rec'
 repo ='Shougo/ddu-ui-ff'
 
 [[plugins]]
+repo ='Shougo/ddu-ui-filer'
+
+[[plugins]]
 # コード補完
 repo ='Shougo/ddc-around'
 
