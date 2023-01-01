@@ -12,6 +12,16 @@ wezterm.on('update-right-status', function(window, pane)
   })
 end)
 
+wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
+  local index = ''
+  if #tabs > 1 then
+    index = string.format('[%d/%d] ', tab.tab_index + 1, #tabs)
+  end
+
+  local cwd_full = tab.active_pane.current_working_dir
+  return index .. tab.active_pane.title .. '@' .. cwd_full
+end)
+
 return {
   audible_bell = 'Disabled',
   font = wezterm.font_with_fallback {
