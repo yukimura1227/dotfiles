@@ -127,5 +127,6 @@ return {
       mods = 'SUPER',
       action = wezterm.action.ToggleFullScreen,
     },
+    { key = 'l', mods = 'SUPER', action = wezterm.action.ShowLauncher },
   },
 }
