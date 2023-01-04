@@ -97,14 +97,14 @@ return {
     },
     {
       key    = 'D', -- NOTE: keybind like iterm2
-      mods   = 'SUPER',
+      mods   = 'CMD',
       action = wezterm.action.SplitVertical {
         domain = 'CurrentPaneDomain'
       },
     },
     {
       key    = 'd', -- NOTE: keybind like iterm2
-      mods   = 'SUPER',
+      mods   = 'CMD',
       action = wezterm.action.SplitHorizontal {
         domain = 'CurrentPaneDomain'
       },
@@ -112,21 +112,21 @@ return {
     {
       -- NOTE: keybind like iTerm2
       key = '[',
-      mods = 'SUPER',
+      mods = 'CMD',
       action = act.ActivatePaneDirection 'Prev',
     },
     {
       -- NOTE: keybind like iTerm2
       key = ']',
-      mods = 'SUPER',
+      mods = 'CMD',
       action = act.ActivatePaneDirection 'Next',
     },
     {
       -- NOTE: keybind like iTerm2
       key = 'Enter',
-      mods = 'SUPER',
+      mods = 'CMD',
       action = wezterm.action.ToggleFullScreen,
     },
-    { key = 'l', mods = 'SUPER', action = wezterm.action.ShowLauncher },
+    { key = 'l', mods = 'CMD', action = wezterm.action.ShowLauncher },
   },
 }
