@@ -1,6 +1,11 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
+function override_config(original, additional)
+  for key, value in pairs(additional) do
+    original[key] = value
+  end
+end
 wezterm.on('update-right-status', function(window, pane)
   local date = wezterm.strftime '🕰 %H:%M:%S '
   local bat = ''
@@ -56,15 +61,8 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
   return tab_text
 end)
 
-return {
+local config = {
   audible_bell = 'Disabled',
-  font = wezterm.font_with_fallback {
-    { family = "HackGen Console NFJ", weight = "Regular" },
-    -- NOTE: weztermでは、JetBrains Mono、Noto Color Emojiは同梱されている
-    { family = 'JetBrains Mono'     , weight = 'Regular' },
-    { family = 'Noto Color Emoji' },
-  },
-  font_size = 20,
   default_cursor_style = 'BlinkingBar',
   animation_fps = 1,
   color_scheme = 'PencilDark',
@@ -130,3 +128,7 @@ return {
     { key = 'l', mods = 'CMD', action = wezterm.action.ShowLauncher },
   },
 }
+local font = require('font')
+override_config(config, font)
+
+return config
