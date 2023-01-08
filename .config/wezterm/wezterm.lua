@@ -65,24 +65,8 @@ local config = {
   audible_bell = 'Disabled',
   default_cursor_style = 'BlinkingBar',
   animation_fps = 1,
-  color_scheme = 'PencilDark',
-  colors = {
-    split = 'violet',
-  },
   inactive_pane_hsb = {
     brightness = 0.5
-  },
-  window_background_gradient = {
-    orientation = { Linear = { angle = 45.0 } },
-    colors = {
-      '#10001A',
-      '#10001A',
-      '#10002A',
-      '#10003A',
-      '#18003F',
-    },
-    interpolation = 'Linear',
-    blend = 'Rgb',
   },
   keys = {
     { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
@@ -130,5 +114,7 @@ local config = {
 }
 local font = require('font')
 override_config(config, font)
+local color = require('color')
+override_config(config, color)
 
 return config
