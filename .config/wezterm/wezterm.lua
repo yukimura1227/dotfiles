@@ -6,17 +6,6 @@ function override_config(original, additional)
     original[key] = value
   end
 end
-wezterm.on('update-right-status', function(window, pane)
-  local date = wezterm.strftime '🕰 %H:%M:%S '
-  local bat = ''
-  for _, b in ipairs(wezterm.battery_info()) do
-    bat = '🔋 ' .. string.format('%.0f%%', b.state_of_charge * 100)
-  end
-  window:set_right_status(wezterm.format {
-    { Text = bat .. '   ' .. date },
-  })
-end)
-
 wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
   local index = ''
   if #tabs > 1 then
@@ -116,5 +105,6 @@ local font = require('font')
 override_config(config, font)
 local color = require('color')
 override_config(config, color)
+local color = require('right-status')
 
 return config
