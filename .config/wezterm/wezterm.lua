@@ -1,5 +1,4 @@
 local wezterm = require 'wezterm'
-local act = wezterm.action
 
 function override_config(original, additional)
   for key, value in pairs(additional) do
@@ -57,54 +56,13 @@ local config = {
   inactive_pane_hsb = {
     brightness = 0.5
   },
-  keys = {
-    { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
-    {
-      key  = 'q', -- NOTE: keybind like tmux
-      mods = 'CTRL',
-      action = act.PaneSelect {
-        alphabet = '1234567890'
-      }
-    },
-    {
-      key    = 'D', -- NOTE: keybind like iterm2
-      mods   = 'CMD',
-      action = wezterm.action.SplitVertical {
-        domain = 'CurrentPaneDomain'
-      },
-    },
-    {
-      key    = 'd', -- NOTE: keybind like iterm2
-      mods   = 'CMD',
-      action = wezterm.action.SplitHorizontal {
-        domain = 'CurrentPaneDomain'
-      },
-    },
-    {
-      -- NOTE: keybind like iTerm2
-      key = '[',
-      mods = 'CMD',
-      action = act.ActivatePaneDirection 'Prev',
-    },
-    {
-      -- NOTE: keybind like iTerm2
-      key = ']',
-      mods = 'CMD',
-      action = act.ActivatePaneDirection 'Next',
-    },
-    {
-      -- NOTE: keybind like iTerm2
-      key = 'Enter',
-      mods = 'CMD',
-      action = wezterm.action.ToggleFullScreen,
-    },
-    { key = 'l', mods = 'CMD', action = wezterm.action.ShowLauncher },
-  },
 }
 local font = require('font')
 override_config(config, font)
 local color = require('color')
 override_config(config, color)
 local color = require('right-status')
+local keys = require('keys')
+override_config(config, keys)
 
 return config
