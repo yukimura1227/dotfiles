@@ -522,6 +522,16 @@
                         },
                         {
                             "from": {
+                                "key_code": "print_screen"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "right_command"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
                                 "key_code": "right_option"
                             },
                             "to": [
