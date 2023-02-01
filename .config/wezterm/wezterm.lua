@@ -57,7 +57,7 @@ local config = {
     brightness = 0.5
   },
   quick_select_patterns = {
-    '[0-9a-zA-Z:/_!${}\\-\\.]{7,40}',
+    '[0-9a-zA-Z/_!${}\\-\\.]{7,40}',
   },
 }
 local font = require('font')
