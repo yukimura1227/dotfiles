@@ -6,8 +6,8 @@ key_config = {
   keys = {
     { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
     {
-      key  = 'q', -- NOTE: keybind like tmux
-      mods = 'CTRL',
+      key  = 'q', -- NOTE: keybind like tmux <- CTRL+q is conflict to docker detach(Ctrl+p,Ctrl+q) so using CMD+q
+      mods = 'CMD',
       action = act.PaneSelect {
         alphabet = '1234567890'
       }
