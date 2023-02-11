@@ -1,0 +1,26 @@
+{
+  "title": "Control + [ -> escape",
+  "rules": [
+    {
+      "description": "Control + [ -> escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
