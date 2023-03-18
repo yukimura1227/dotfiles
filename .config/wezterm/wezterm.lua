@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 
-function override_config(original, additional)
+function overrideConfig(original, additional)
   for key, value in pairs(additional) do
     original[key] = value
   end
@@ -61,11 +61,11 @@ local config = {
   },
 }
 local font = require('font')
-override_config(config, font)
+overrideConfig(config, font)
 local color = require('color')
-override_config(config, color)
+overrideConfig(config, color)
 local color = require('right-status')
 local keys = require('keys')
-override_config(config, keys)
+overrideConfig(config, keys)
 
 return config
