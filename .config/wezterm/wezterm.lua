@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 
-function override_config(original, additional)
+function overrideConfig(original, additional)
   for key, value in pairs(additional) do
     original[key] = value
   end
@@ -18,8 +18,8 @@ end)
 local function basename(s)
   return string.gsub(s, "(.*[/\\])(.*)", "%2")
 end
-local function detect_icon(foreground_process_name)
-  local nerd_icons_mapping = {
+local function detectIcon(foreground_process_name)
+  local nerdIcons = {
     Vim    = wezterm.nerdfonts.custom_vim,
     bash   = wezterm.nerdfonts.dev_terminal,
     ssh    = wezterm.nerdfonts.mdi_server,
@@ -27,8 +27,8 @@ local function detect_icon(foreground_process_name)
     docker = wezterm.nerdfonts.dev_docker,
     ruby   = wezterm.nerdfonts.dev_ruby,
   }
-  local process_name = basename(foreground_process_name)
-  icon = nerd_icons_mapping[process_name]
+  local processName = basename(foregroundProcessName)
+  icon = nerdIconsMapping[processName]
   if icon then
     return icon .. ' '
   else
@@ -37,7 +37,7 @@ local function detect_icon(foreground_process_name)
 end
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-  local icon = detect_icon(tab.active_pane.foreground_process_name)
+  local icon = detectIcon(tab.active_pane.foreground_process_name)
   local tab_text = (tab.tab_index+1) .. ':  ' .. icon .. '  ' .. tab.active_pane.title
   if tab.is_active then
     local cwd = basename(tab.active_pane.current_working_dir)
@@ -61,11 +61,11 @@ local config = {
   },
 }
 local font = require('font')
-override_config(config, font)
+overrideConfig(config, font)
 local color = require('color')
-override_config(config, color)
+overrideConfig(config, color)
 local color = require('right-status')
 local keys = require('keys')
-override_config(config, keys)
+overrideConfig(config, keys)
 
 return config
