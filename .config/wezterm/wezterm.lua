@@ -11,8 +11,8 @@ wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
     index = string.format('[%d/%d] ', tab.tab_index + 1, #tabs)
   end
 
-  local cwd_full = tab.active_pane.current_working_dir
-  return index .. tab.active_pane.title .. '@' .. cwd_full
+  local cwdFull = tab.active_pane.current_working_dir
+  return index .. tab.active_pane.title .. '@' .. cwdFull
 end)
 
 local function basename(s)
@@ -36,17 +36,17 @@ local function detectIcon(foreground_process_name)
   end
 end
 
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, maxWidth)
   local icon = detectIcon(tab.active_pane.foreground_process_name)
-  local tab_text = (tab.tab_index+1) .. ':  ' .. icon .. '  ' .. tab.active_pane.title
+  local tabText = (tab.tab_index+1) .. ':  ' .. icon .. '  ' .. tab.active_pane.title
   if tab.is_active then
     local cwd = basename(tab.active_pane.current_working_dir)
     return {
       { Background = { Color = '#4000CF' } },
-      { Text = tab_text .. '  ' .. cwd .. '/' },
+      { Text = tabText .. '  ' .. cwd .. '/' },
     }
   end
-  return tab_text
+  return tabText
 end)
 
 local config = {
