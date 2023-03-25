@@ -1,8 +1,8 @@
-local key_config = {}
+local keyConfig = {}
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
-key_config = {
+keyConfig = {
   keys = {
     { key = 'D', mods = 'CTRL', action = wezterm.action.ShowDebugOverlay },
     {
@@ -49,4 +49,4 @@ key_config = {
 
 }
 
-return key_config
+return keyConfig

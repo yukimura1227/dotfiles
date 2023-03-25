@@ -1,7 +1,7 @@
-local color_config = {}
+local colorConfig = {}
 local wezterm = require 'wezterm'
 
-color_config = {
+colorConfig = {
   color_scheme = 'PencilDark',
   colors = {
     split = 'violet',
@@ -20,4 +20,4 @@ color_config = {
   },
 }
 
-return color_config
+return colorConfig

@@ -1,7 +1,7 @@
-local font_config = {}
+local fontConfig = {}
 local wezterm = require 'wezterm'
 
-font_config = {
+fontConfig = {
   font = wezterm.font_with_fallback {
     { family = "HackGen Console NFJ", weight = "Regular" },
     -- NOTE: weztermでは、JetBrains Mono、Noto Color Emojiは同梱されている
@@ -11,4 +11,4 @@ font_config = {
   font_size = 20,
 }
 
-return font_config
+return fontConfig
