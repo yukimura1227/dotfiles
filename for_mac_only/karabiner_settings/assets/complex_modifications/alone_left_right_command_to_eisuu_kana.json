@@ -15,7 +15,7 @@
             }
           },
           "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 10
+            "basic.to_if_held_down_threshold_milliseconds": 1
           },
           "to": [
             {
@@ -45,7 +45,7 @@
             }
           },
           "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 10
+            "basic.to_if_held_down_threshold_milliseconds": 1
           },
           "to": [
             {
