@@ -184,6 +184,27 @@
                         ]
                     },
                     {
+                        "description": "Control + [ -> escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "ALone Left/Right Command to Japanese Eisuu/JapanseKana",
                         "manipulators": [
                             {
