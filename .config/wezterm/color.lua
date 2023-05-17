@@ -2,7 +2,7 @@ local colorConfig = {}
 local wezterm = require 'wezterm'
 
 colorConfig = {
-  color_scheme = 'PencilDark',
+  color_scheme = 'Dracula',
   colors = {
     split = 'violet',
   },
