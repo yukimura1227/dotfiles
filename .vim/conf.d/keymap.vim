@@ -38,7 +38,7 @@ nnoremap <silent> [ddu_for_rails]as   :call execute("Ddu file_rec -source-option
 nnoremap <silent> [ddu_for_rails]cont :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/controllers")<CR>
 nnoremap <silent> [ddu_for_rails]de   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/decorators")<CR>
 nnoremap <silent> [ddu_for_rails]h    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/helpers")<CR>
-nnoremap <silent> [ddu_for_rails]w    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/javascript")<CR>
+nnoremap <silent> [ddu_for_rails]w    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/frontend")<CR>
 nnoremap <silent> [ddu_for_rails]jo   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/jobs")<CR>
 nnoremap <silent> [ddu_for_rails]ma   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/mailers")<CR>
 nnoremap <silent> [ddu_for_rails]mo   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/models")<CR>
