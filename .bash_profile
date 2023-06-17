@@ -38,6 +38,11 @@ then
   complete -C terraform terraform
 fi
 
+if type "gh" > /dev/null 2>&1
+then
+  eval "$(gh completion -s bash)"
+fi
+
 export LIMA_INSTANCE=lima_docker
 export DOCKER_HOST=unix://${HOME}/.lima/${LIMA_INSTANCE}/sock/docker.sock
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
