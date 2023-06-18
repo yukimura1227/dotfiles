@@ -18,5 +18,6 @@ ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/wezterm ~/.config/wezterm
+ln -sf ~/dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
