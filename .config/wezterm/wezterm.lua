@@ -59,6 +59,7 @@ local config = {
   quick_select_patterns = {
     '[0-9a-zA-Z/_!${}\\-\\.]{7,120}',
   },
+  scrollback_lines = 10000,
 }
 local font = require('font')
 overrideConfig(config, font)
