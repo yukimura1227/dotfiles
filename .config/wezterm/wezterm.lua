@@ -65,7 +65,7 @@ local font = require('font')
 overrideConfig(config, font)
 local color = require('color')
 overrideConfig(config, color)
-local color = require('right-status')
+local rightStatus = require('right-status')
 local keys = require('keys')
 overrideConfig(config, keys)
 
