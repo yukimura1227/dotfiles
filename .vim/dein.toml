@@ -9,6 +9,15 @@ repo = 'dense-analysis/ale'
 [[plugins]]
 repo = 'elzr/vim-json'
 
+# [[plugins]]
+# repo = 'junegunn/fzf'
+# build_on = '''
+# ./install -all
+# '''
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
 [[plugins]]
 # Gitを便利に使うプラグイン
 repo = 'tpope/vim-fugitive'

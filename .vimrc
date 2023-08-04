@@ -87,6 +87,7 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml('~/.vim/dein.toml')
+  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#end()
   call map(dein#check_clean(), "delete(v:val, 'rf')")
   call dein#save_state()
