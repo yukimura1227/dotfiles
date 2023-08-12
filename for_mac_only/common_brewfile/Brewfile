@@ -34,7 +34,6 @@ cask 'nosql-workbench'
 cask 'notion'
 cask 'postman'
 cask 'raycast'
-cask 'robo-3t'
 cask 'rstudio'
 cask 'sequel-ace'
 # cask 'skitch' # TODO: 各環境削除したら、行を削除する
