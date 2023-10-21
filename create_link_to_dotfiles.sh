@@ -21,3 +21,5 @@ ln -sf ~/dotfiles/.config/wezterm ~/.config/wezterm
 ln -sf ~/dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
 mkdir -p ~/.nodebrew/src
 mkdir -p ~/backup
+
+ln -sf ~/dotfiles/raycast_scripts ~/raycast_scripts
