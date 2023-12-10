@@ -13,7 +13,6 @@ cask 'dash'
 cask 'docker'
 cask 'drawio'
 cask 'dropbox'
-cask 'evernote'
 cask 'firefox'
 cask 'font-fontawesome'
 # cask 'font-ricty-diminished' # TODO: font-hackgen-nertに移行できたら削除したい  brew uninstall font-ricty-diminished
