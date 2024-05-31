@@ -45,8 +45,12 @@ keyConfig = {
       action = wezterm.action.ToggleFullScreen,
     },
     { key = 'l', mods = 'CMD', action = wezterm.action.ShowLauncher },
+    {
+      key = 'w',
+      mods = 'CMD',
+      action = wezterm.action.CloseCurrentPane { confirm = true },
+    },
   },
-
 }
 
 return keyConfig
