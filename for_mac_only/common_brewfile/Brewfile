@@ -49,6 +49,7 @@ brew 'awscli'
 brew 'bat'
 brew 'bash-completion'
 brew 'gh'
+brew 'gitql'
 brew 'circleci'
 # brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
