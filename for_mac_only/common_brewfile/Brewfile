@@ -1,9 +1,6 @@
 # tap 'supermomonga/homebrew-splhack'
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
 tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
-tap 'homebrew/cask-versions'
 # tap 'universal-ctags/universal-ctags'
 
 cask 'bettertouchtool'
