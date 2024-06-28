@@ -19,6 +19,8 @@ brew bundle
 ```sh
 # setup symbolic links
 sh create_link_to_dotfiles.sh
+
+sh for_mac_only/linking_karabiner_settings.sh
 ```
 
 ```sh
