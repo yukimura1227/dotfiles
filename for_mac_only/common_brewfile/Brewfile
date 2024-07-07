@@ -34,7 +34,6 @@ cask 'vagrant'
 # cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'wez/wezterm/wezterm'
-cask 'xquartz' # for wine
 
 brew 'awscli'
 brew 'bat'
@@ -75,7 +74,6 @@ brew 'tree'
 brew 'tmux'
 # brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
-# brew 'wine' # NOTE: Warning: 'wine' formula is unreadable: No available formula with the name "wine". Did you mean winexe?というエラーになるのでコメントアウト
 brew 'yarn', args: ['ignore-dependencies']
 
 # 以下は、mas signin してからじゃないと使えません。
