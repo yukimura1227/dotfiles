@@ -74,7 +74,6 @@ brew 'tree'
 brew 'tmux'
 # brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
-brew 'yarn', args: ['ignore-dependencies']
 
 # 以下は、mas signin してからじゃないと使えません。
 # NOTE: 2022/09/03 時点、mas signinがエラーになるため、コメントアウトしています。
