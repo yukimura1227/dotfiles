@@ -68,8 +68,6 @@ brew 'lua'
 # deprevate error brew 'lua@5.1' # macvim-kaoriyaがlua lua@5.1両方必要そう
 brew 'mas'
 brew "mysql-client@8.0", link: true
-brew 'nodenv'
-brew 'node-build'
 brew 'pkg-config'
 brew 'pstree'
 brew 'pyenv'
