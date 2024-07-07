@@ -25,7 +25,6 @@ cask 'macvim'
 cask 'ngrok'
 cask 'notion'
 cask 'raycast'
-cask 'rstudio'
 cask 'sequel-ace'
 # cask 'skitch' # TODO: 各環境削除したら、行を削除する
 cask 'slack'
