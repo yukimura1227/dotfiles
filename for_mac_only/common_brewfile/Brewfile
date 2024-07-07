@@ -36,7 +36,6 @@ cask 'visual-studio-code'
 cask 'wez/wezterm/wezterm'
 cask 'xquartz' # for wine
 
-brew 'ansible'
 brew 'awscli'
 brew 'bat'
 brew 'bash-completion'
