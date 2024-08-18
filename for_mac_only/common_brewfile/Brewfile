@@ -43,6 +43,7 @@ brew 'circleci'
 # brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'deno'
+brew 'fd'
 brew 'fzf'
 brew 'gawk'
 brew 'gcc'
