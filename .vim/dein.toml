@@ -27,10 +27,6 @@ repo = 'tpope/vim-fugitive'
 repo = 'tpope/vim-surround'
 
 [[plugins]]
-repo = 'kyoz/purify'
-rtp = 'vim'
-
-[[plugins]]
 repo = 'mattn/vim-maketable'
 
 [[plugins]]
