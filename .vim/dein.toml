@@ -89,6 +89,9 @@ repo ='Shougo/ddc-matcher_head'
 repo ='Shougo/ddc-sorter_rank'
 
 [[plugins]]
+repo ='shun/ddc-source-vim-lsp'
+
+[[plugins]]
 # Ruby向けにendを自動挿入してくれるプラグイン
 repo = 'tpope/vim-endwise'
 
