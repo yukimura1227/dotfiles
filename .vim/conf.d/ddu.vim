@@ -74,3 +74,55 @@ function! s:my_ddu_ff_filter_settings() abort
   inoremap <buffer> <C-p>
     \ <Cmd>call ddu#ui#ff#execute("call cursor(line('.')-1,0)")<CR>
 endfunction
+
+" ddu-filerの設定
+autocmd TabEnter,CursorHold,FocusGained <buffer>
+  \ call ddu#ui#filer#do_action('checkItems')
+call ddu#custom#patch_local('filer', {
+\   'ui': 'filer',
+\   'sources': [
+\     {
+\       'name': 'file',
+\       'params': {},
+\     },
+\   ],
+\   'sourceOptions': {
+\     '_': {
+\       'columns': ['filename'],
+\     },
+\   },
+\   'kindOptions': {
+\     'file': {
+\       'defaultAction': 'open',
+\     },
+\   },
+\   'uiParams': {
+\     'filer': {
+\       'winWidth': 40,
+\       'split': 'vertical',
+\       'splitDirection': 'topleft',
+\     }
+\   },
+\ })
+autocmd FileType ddu-filer call s:my_ddu_filer_settings()
+function! s:my_ddu_filer_settings() abort
+  nnoremap <buffer><silent> q
+    \ <Cmd>call ddu#ui#filer#do_action('quit')<CR>
+  nnoremap <buffer><silent> <Esc>
+    \ <Cmd>call ddu#ui#filer#do_action('quit')<CR>
+  nnoremap <buffer><silent> <C-[>
+    \ <Cmd>call ddu#ui#filer#do_action('quit')<CR>
+  nnoremap <buffer> o
+    \ <Cmd>call ddu#ui#filer#do_action('expandItem', {'mode': 'toggle'})<CR>
+  nnoremap <buffer><silent><expr> <CR>
+    \ ddu#ui#get_item()->get('isTree', v:false) ?
+    \ "<Cmd>call ddu#ui#filer#do_action('expandItem', {'mode': 'toggle'})<CR>" :
+    \ "<Cmd>call ddu#ui#filer#do_action('itemAction', {'name': 'open', 'params': {'command': 'vsplit'}})<CR>"
+
+  nnoremap <buffer><silent><expr> <Space>
+    \ ddu#ui#get_item()->get('isTree', v:false) ?
+    \ "<Cmd>call ddu#ui#filer#do_action('itemAction', {'name': 'narrow'})<CR>" :
+    \ "<Cmd>call ddu#ui#filer#do_action('itemAction', {'name': 'open', 'params': {'command': 'split'}})<CR>"
+  nnoremap <buffer><silent> ..
+    \ <Cmd>call ddu#ui#filer#do_action('itemAction', {'name': 'narrow', 'params': {'path': '..'}})<CR>
+endfunction

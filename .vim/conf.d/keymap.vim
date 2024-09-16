@@ -30,6 +30,7 @@ nmap <Space>r [ddu_for_rails]
 
 "----------key bind for ddu---------"
 nmap <silent> [ddu]f :<C-u>Ddu file<CR>i
+nmap <silent> [ddu]e <Cmd>call ddu#start({'name': 'filer','uiParams': {'filer': {'search': expand('%:p')}},})<CR>
 
 "----------key bind for ddu for rails---------"
 nnoremap <silent> [ddu_for_rails]ai   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/images")<CR>
