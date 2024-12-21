@@ -1,29 +1,47 @@
 #!/bin/bash
+
+createSymbolicLinkIfNotExist () {
+  linkFrom=$1
+  linkTo=$2
+  if [ -L ${linkTo} ]; then
+    if [ -e ${linkTo} ]; then
+      echo "already linked... [${linkTo}]"
+    else
+      echo "[ERROR] ${linkTo} is Broken!!!" >&2
+    fi
+  elif [ -e ${linkTo} ]; then
+    echo "[ERROR] ${linkTo} is not a link!!!" >&2
+  else
+    echo "ln -sf ${linkFrom} ${linkTo}"
+    ln -sf ${linkFrom} ${linkTo}
+  fi
+}
+
 # careate symbolic link
 mkdir -p ~/.config
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.gvimrc ~/.gvimrc
-ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
-ln -sf ~/dotfiles/.vim ~/.vim
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/dotfiles/.tigrc ~/.tigrc
-ln -sf ~/dotfiles/.matplotlib ~/.matplotlib
-ln -sf ~/dotfiles/.jupyter ~/.jupyter
-ln -sf ~/dotfiles/.batconfig ~/.batconfig
-ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
-ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.nbrc ~/.nbrc
+createSymbolicLinkIfNotExist ~/dotfiles/.vimrc ~/.vimrc
+createSymbolicLinkIfNotExist ~/dotfiles/.gvimrc ~/.gvimrc
+createSymbolicLinkIfNotExist ~/dotfiles/.ideavimrc ~/.ideavimrc
+createSymbolicLinkIfNotExist ~/dotfiles/.vim ~/.vim
+createSymbolicLinkIfNotExist ~/dotfiles/.gitconfig ~/.gitconfig
+createSymbolicLinkIfNotExist ~/dotfiles/.gitignore_global ~/.gitignore_global
+createSymbolicLinkIfNotExist ~/dotfiles/.bashrc ~/.bashrc
+createSymbolicLinkIfNotExist ~/dotfiles/.bash_profile ~/.bash_profile
+createSymbolicLinkIfNotExist ~/dotfiles/.tigrc ~/.tigrc
+createSymbolicLinkIfNotExist ~/dotfiles/.matplotlib ~/.matplotlib
+createSymbolicLinkIfNotExist ~/dotfiles/.jupyter ~/.jupyter
+createSymbolicLinkIfNotExist ~/dotfiles/.batconfig ~/.batconfig
+createSymbolicLinkIfNotExist ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
+createSymbolicLinkIfNotExist ~/dotfiles/.terraformrc ~/.terraformrc
+createSymbolicLinkIfNotExist ~/dotfiles/.tmux.conf ~/.tmux.conf
+createSymbolicLinkIfNotExist ~/dotfiles/.nbrc ~/.nbrc
 
 mkdir -p ~/.config
-ln -sf ~/dotfiles/.config/wezterm ~/.config/wezterm
-ln -sf ~/dotfiles/.config/gh ~/.config/gh
+createSymbolicLinkIfNotExist ~/dotfiles/.config/wezterm ~/.config/wezterm
+createSymbolicLinkIfNotExist ~/dotfiles/.config/gh ~/.config/gh
 
 mkdir -p ~/.nodebrew/src
 
 mkdir -p ~/backup
 
-ln -sf ~/dotfiles/raycast_scripts ~/raycast_scripts
+createSymbolicLinkIfNotExist ~/dotfiles/raycast_scripts ~/raycast_scripts
