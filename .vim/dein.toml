@@ -9,6 +9,9 @@ repo = 'dense-analysis/ale'
 [[plugins]]
 repo = 'elzr/vim-json'
 
+[[plugins]]
+repo = 'dracula/vim'
+
 # [[plugins]]
 # repo = 'junegunn/fzf'
 # build_on = '''
@@ -25,10 +28,6 @@ repo = 'tpope/vim-fugitive'
 [[plugins]]
 # 文字列を何かでくくったり解除したりするプラグイン
 repo = 'tpope/vim-surround'
-
-[[plugins]]
-repo = 'kyoz/purify'
-rtp = 'vim'
 
 [[plugins]]
 repo = 'mattn/vim-maketable'
@@ -88,6 +87,9 @@ repo ='Shougo/ddc-matcher_head'
 [[plugins]]
 # コード補完
 repo ='Shougo/ddc-sorter_rank'
+
+[[plugins]]
+repo ='shun/ddc-source-vim-lsp'
 
 [[plugins]]
 # Ruby向けにendを自動挿入してくれるプラグイン
