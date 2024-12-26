@@ -20,8 +20,6 @@ createSymbolicLinkIfNotExist () {
 # careate symbolic link
 mkdir -p ~/.config
 createSymbolicLinkIfNotExist ~/dotfiles/.vimrc ~/.vimrc
-createSymbolicLinkIfNotExist ~/dotfiles/.gvimrc ~/.gvimrc
-createSymbolicLinkIfNotExist ~/dotfiles/.ideavimrc ~/.ideavimrc
 createSymbolicLinkIfNotExist ~/dotfiles/.vim ~/.vim
 createSymbolicLinkIfNotExist ~/dotfiles/.gitconfig ~/.gitconfig
 createSymbolicLinkIfNotExist ~/dotfiles/.gitignore_global ~/.gitignore_global
