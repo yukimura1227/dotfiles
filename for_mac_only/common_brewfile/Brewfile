@@ -12,6 +12,7 @@ cask 'dropbox'
 cask 'firefox'
 # cask 'font-ricty-diminished' # TODO: font-hackgen-nertに移行できたら削除したい  brew uninstall font-ricty-diminished
 cask 'font-hackgen-nerd'
+cask 'git-credential-manager'
 cask 'google-chrome'
 cask 'google-drive-file-stream'
 cask 'google-earth-pro'
