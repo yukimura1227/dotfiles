@@ -16,10 +16,14 @@ ln -sf ~/dotfiles/.batconfig ~/.batconfig
 ln -sf ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 ln -sf ~/dotfiles/.terraformrc ~/.terraformrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.nbrc ~/.nbrc
+
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/wezterm ~/.config/wezterm
 ln -sf ~/dotfiles/.config/gh ~/.config/gh
+
 mkdir -p ~/.nodebrew/src
+
 mkdir -p ~/backup
 
 ln -sf ~/dotfiles/raycast_scripts ~/raycast_scripts
