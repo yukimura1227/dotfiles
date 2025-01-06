@@ -14,6 +14,9 @@ cd dotfiles/for_mac_only/common_brewfile
 sudo softwareupdate --install-rosetta
 
 brew bundle
+
+# for VSCode VimPlugin
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```
 
 ```sh
