@@ -3,3 +3,5 @@
 export EDITOR="vim" # Set by `nb` • Mon Jan  6 17:37:23 JST 2025
 
 export NB_FOOTER="0"
+
+export NB_MARKDOWN_TOOL="bat"
