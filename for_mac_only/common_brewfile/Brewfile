@@ -67,6 +67,7 @@ brew "nodenv"
 brew 'pkg-config'
 brew 'pstree'
 brew 'rename'
+brew 'ripgrep'
 brew 'tig'
 brew 'translate-shell'
 brew 'tree'
