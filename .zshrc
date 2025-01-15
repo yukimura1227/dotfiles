@@ -6,14 +6,12 @@ export GREP_OPTIONS="--color=auto"
 PS1="🍥 %F{cyan}%1~ %f%(!.#.$)${reset_color} "
 
 # Git
-if type "git" > /dev/null 2>&1
-then
+if type "git" > /dev/null 2>&1; then
   alias g='git'
 fi
 
 # docker
-if type "docker" > /dev/null 2>&1
-then
+if type "docker" > /dev/null 2>&1; then
   alias d='docker'
   alias dc='docker compose'
 fi
