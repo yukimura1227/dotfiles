@@ -23,8 +23,8 @@ createSymbolicLinkIfNotExist ~/dotfiles/.vimrc ~/.vimrc
 createSymbolicLinkIfNotExist ~/dotfiles/.vim ~/.vim
 createSymbolicLinkIfNotExist ~/dotfiles/.gitconfig ~/.gitconfig
 createSymbolicLinkIfNotExist ~/dotfiles/.gitignore_global ~/.gitignore_global
-createSymbolicLinkIfNotExist ~/dotfiles/.bashrc ~/.bashrc
-createSymbolicLinkIfNotExist ~/dotfiles/.bash_profile ~/.bash_profile
+createSymbolicLinkIfNotExist ~/dotfiles/.zshrc ~/.zshrc
+createSymbolicLinkIfNotExist ~/dotfiles/.zprofile ~/.zprofile
 createSymbolicLinkIfNotExist ~/dotfiles/.tigrc ~/.tigrc
 createSymbolicLinkIfNotExist ~/dotfiles/.matplotlib ~/.matplotlib
 createSymbolicLinkIfNotExist ~/dotfiles/.jupyter ~/.jupyter
