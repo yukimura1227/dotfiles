@@ -14,6 +14,7 @@ fi
 export RUBYOPT='-W:deprecated'
 
 if type "fzf" > /dev/null 2>&1; then
+  source <(fzf --zsh) # Set up fzf key bindings and fuzzy completion
   export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 fi
 

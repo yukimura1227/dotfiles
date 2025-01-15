@@ -19,5 +19,3 @@ fi
 export RUBYOPT='-W:deprecated'
 
 export BAT_CONFIG_PATH=~/.batconfig
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
