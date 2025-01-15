@@ -6,12 +6,6 @@ if type "rbenv" > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-if type "pyenv" > /dev/null 2>&1; then
-  PYENV_ROOT=~/.pyenv
-  export PATH=$PATH:$PYENV_ROOT/bin
-  eval "$(pyenv init -)"
-fi
-
 export GOPATH=~/go
 
 if type "nodenv" > /dev/null 2>&1; then
