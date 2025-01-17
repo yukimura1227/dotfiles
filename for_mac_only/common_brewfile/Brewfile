@@ -35,7 +35,6 @@ cask 'wez/wezterm/wezterm'
 brew 'awscli'
 brew 'bat'
 brew 'zsh-completion'
-brew 'circleci'
 # brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'deno'
