@@ -27,7 +27,6 @@ cask 'raycast'
 cask 'sequel-ace'
 cask 'slack'
 # cask 'stoplight-studio' # NOTE: バージョンを上げるとarm 版macで動かないので、手動で管理
-cask 'toggl-track'
 cask 'vagrant'
 cask 'visual-studio-code'
 cask 'wez/wezterm/wezterm'
