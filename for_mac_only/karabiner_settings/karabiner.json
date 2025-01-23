@@ -254,10 +254,6 @@
                     "ignore": false,
                     "simple_modifications": [
                         {
-                            "from": { "key_code": "caps_lock" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
                             "from": { "key_code": "international2" },
                             "to": [{ "key_code": "right_command" }]
                         },
@@ -372,6 +368,16 @@
                         "is_pointing_device": true,
                         "product_id": 24814,
                         "vendor_id": 6127
+                    },
+                    "ignore": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 22,
+                        "vendor_id": 1278
                     },
                     "ignore": false
                 }
