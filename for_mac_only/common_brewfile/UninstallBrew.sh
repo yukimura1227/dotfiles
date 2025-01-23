@@ -5,3 +5,5 @@ brew uninstall virtualbox
 brew uninstall rsense
 brew uninstall bash-completion
 brew uninstall homebrew/cask-drivers/logitech-options
+brew uninstall circleci
+brew uninstall toggl-track
