@@ -23,6 +23,7 @@ cask 'macvim'
 cask 'ngrok'
 cask 'notion'
 cask 'raycast'
+cask 'obsidian'
 cask 'sequel-ace'
 cask 'slack'
 # cask 'stoplight-studio' # NOTE: バージョンを上げるとarm 版macで動かないので、手動で管理
