@@ -43,7 +43,7 @@ rm -f ${OUTPUT_FILE}
 echo "リポジトリ '$REPO' から $DATE_FROM から $DATE_TO までのPull Requestを取得中..."
 
 # PRのリストを取得
-PRS=$(gh pr list --state all --repo "$REPO" --search "created:$DATE_FROM..$DATE_TO sort:created-asc" --json number,title,url,createdAt,author,state --limit 2000)
+PRS=$(gh pr list --state all --repo "$REPO" --search "updated:$DATE_FROM..$DATE_TO sort:created-asc" --json number,title,url,createdAt,author,state --limit 2000)
 
 # 各PRに対して処理
 echo "$PRS" | jq -c '.[]' | while read -r pr; do
