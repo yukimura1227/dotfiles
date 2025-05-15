@@ -4,6 +4,7 @@ tap 'splhack/homebrew-splhack'
 # tap 'universal-ctags/universal-ctags'
 
 cask 'bettertouchtool'
+cask 'chatgpt'
 cask 'chromedriver'
 cask 'dash'
 cask 'docker'
