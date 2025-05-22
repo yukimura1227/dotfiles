@@ -4,4 +4,4 @@ set t_Co=256
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 
-colorscheme dracula
+colorscheme catppuccin_mocha
