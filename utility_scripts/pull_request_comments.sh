@@ -15,9 +15,9 @@ show_help() {
 例:
   $0 octocat/hello-world 2023-01-01 2023-01-31
 例2(MacOSで昨日のコメントを取得する):
-  DAY=$(date -v -1d '+%Y-%m-%d'); sh pull_request_comments.sh octocat/hello-world ${DAY} ${DAY}
+  DAY=\$(date -v -1d '+%Y-%m-%d'); sh pull_request_comments.sh octocat/hello-world \${DAY} \${DAY}
 例2(Linux上で昨日のコメントを取得する):
-  DAY=$(date --date '1 day ago' '+%Y-%m-%d'); sh pull_request_comments.sh octocat/hello-world ${DAY} ${DAY}
+  DAY=\$(date --date '1 day ago' '+%Y-%m-%d'); sh pull_request_comments.sh octocat/hello-world \${DAY} \${DAY}
 EOF
   exit 1
 }
