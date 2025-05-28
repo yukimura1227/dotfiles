@@ -7,3 +7,5 @@ brew uninstall bash-completion
 brew uninstall homebrew/cask-drivers/logitech-options
 brew uninstall circleci
 brew uninstall toggl-track
+brew uninstall nb
+brew uninstall glow

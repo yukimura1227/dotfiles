@@ -32,7 +32,6 @@ createSymbolicLinkIfNotExist ~/dotfiles/.batconfig ~/.batconfig
 createSymbolicLinkIfNotExist ~/dotfiles/.ssh/aws_ssm.sh ~/.ssh/aws_ssm.sh
 createSymbolicLinkIfNotExist ~/dotfiles/.terraformrc ~/.terraformrc
 createSymbolicLinkIfNotExist ~/dotfiles/.tmux.conf ~/.tmux.conf
-createSymbolicLinkIfNotExist ~/dotfiles/.nbrc ~/.nbrc
 
 mkdir -p ~/.config
 createSymbolicLinkIfNotExist ~/dotfiles/.config/wezterm ~/.config/wezterm
