@@ -5,6 +5,9 @@ export GREP_OPTIONS="--color=auto"
 # %F〜%f: set text color. %1~: display 1 directory.
 PS1="🍥 %F{cyan}%B%2~%b%f %(!.#.$)${reset_color} "
 
+# enable comment on command line mode
+setopt interactivecomments
+
 # Git
 if type "git" > /dev/null 2>&1; then
   alias g='git'
