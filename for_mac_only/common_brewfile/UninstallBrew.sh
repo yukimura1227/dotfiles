@@ -9,3 +9,4 @@ brew uninstall circleci
 brew uninstall toggl-track
 brew uninstall nb
 brew uninstall glow
+brew uninstall gitql
