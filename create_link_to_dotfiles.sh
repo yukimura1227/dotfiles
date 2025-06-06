@@ -36,6 +36,7 @@ createSymbolicLinkIfNotExist ~/dotfiles/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.config
 createSymbolicLinkIfNotExist ~/dotfiles/.config/wezterm ~/.config/wezterm
 createSymbolicLinkIfNotExist ~/dotfiles/.config/gh ~/.config/gh
+createSymbolicLinkIfNotExist ~/dotfiles/.config/lazygit ~/.config/lazygit
 
 mkdir -p ~/.nodebrew/src
 
