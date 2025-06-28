@@ -9,8 +9,8 @@ set fileformats=unix
 " 末尾に自動的に改行を加えない
 set nofixeol
 "フォントの設定
-set guifont=HackGenNerd:h14
-set guifontwide=HackGenNerd:h14
+set guifont=UDEV\ Gothic\ NF:h14
+set guifontwide=UDEV\ Gothic\ NF:h14
 " \tの見た目の幅を指定する
 set tabstop=2
 " vimで自動的に設定されるインデントの幅を指定する
