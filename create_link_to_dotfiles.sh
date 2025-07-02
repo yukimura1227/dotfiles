@@ -37,6 +37,7 @@ mkdir -p ~/.config
 createSymbolicLinkIfNotExist ~/dotfiles/.config/wezterm ~/.config/wezterm
 createSymbolicLinkIfNotExist ~/dotfiles/.config/gh ~/.config/gh
 createSymbolicLinkIfNotExist ~/dotfiles/.config/lazygit ~/.config/lazygit
+createSymbolicLinkIfNotExist ~/dotfiles/.config/yazi ~/.config/yazi
 
 mkdir -p ~/.nodebrew/src
 
