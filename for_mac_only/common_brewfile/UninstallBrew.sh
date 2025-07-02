@@ -11,3 +11,4 @@ brew uninstall nb
 brew uninstall glow
 brew uninstall gitql
 brew uninstall hub
+brew uninstall jo
