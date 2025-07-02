@@ -26,6 +26,8 @@ nnoremap [screen_control] <Nop>
 nmap <Space> [screen_control]
 nnoremap [fzf] <Nop>
 nmap <Space>f [fzf]
+nnoremap [yazi] <Nop>
+nmap <Space>y [yazi]
 
 "---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
 

@@ -58,3 +58,6 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 # インデントに色を付けて見やすくする
 repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'yukimura1227/vim-yazi'
