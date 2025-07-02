@@ -1,7 +1,7 @@
 # tap 'supermomonga/homebrew-splhack'
 tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
-# tap 'universal-ctags/universal-ctags'
+tap 'universal-ctags/universal-ctags'
 
 cask 'bettertouchtool'
 cask 'chatgpt'
@@ -70,7 +70,7 @@ brew 'tig'
 brew 'translate-shell'
 brew 'tree'
 brew 'tmux'
-# brew 'universal-ctags', args: ['HEAD']
+brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 
 # 以下は、mas signin してからじゃないと使えません。

@@ -11,6 +11,9 @@ imap <C-f> <Right>
 imap <C-a> <Home>
 imap <C-e> <End>
 
+" デフォルトのタグジャンプ C-] を、LSPによるジャンプにも対応
+nnoremap <expr> <C-]> execute('LspPeekDefinition') =~ "not supported" ? "\<C-]>" : ":LspDefinition<cr>"
+
 " terminal-jobモードからterminal-normalモードの切り替えをマッピング
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-[> <C-\><C-n>
