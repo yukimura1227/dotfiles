@@ -16,7 +16,7 @@ nnoremap <expr> <C-]> execute('LspPeekDefinition') =~ "not supported" ? "\<C-]>"
 
 " terminal-jobモードからterminal-normalモードの切り替えをマッピング
 tnoremap <Esc> <C-\><C-n>
-tnoremap <C-[> <C-\><C-n>
+tnoremap <C-[> <Esc>
 
 nmap copy :call MyCopyCurrentPathToClipboard()<CR>
 nmap code :call MyOpenCurrentBufferOnVSCode()<CR>
