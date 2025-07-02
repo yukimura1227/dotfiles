@@ -21,33 +21,10 @@ nmap code :call MyOpenCurrentBufferOnVSCode()<CR>
 " KeyMapのグルーピング。競合しないようにここにまとめて宣言
 nnoremap [screen_control] <Nop>
 nmap <Space> [screen_control]
-nnoremap [ddu] <Nop>
-nmap <Space>u [ddu]
-nnoremap [g:ddu_for_rails] <Nop>
-nmap <Space>r [ddu_for_rails]
+nnoremap [fzf] <Nop>
+nmap <Space>f [fzf]
 
 "---------- 以下は、グルーピングして競合しないようにしているmapping系 ----------"
-
-"----------key bind for ddu---------"
-nmap <silent> [ddu]f :<C-u>Ddu file<CR>i
-nmap <silent> [ddu]e <Cmd>call ddu#start({'name': 'filer','uiParams': {'filer': {'search': expand('%:p')}},})<CR>
-
-"----------key bind for ddu for rails---------"
-nnoremap <silent> [ddu_for_rails]ai   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/images")<CR>
-nnoremap <silent> [ddu_for_rails]aj   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/javascripts")<CR>
-nnoremap <silent> [ddu_for_rails]as   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/assets/stylesheets")<CR>
-nnoremap <silent> [ddu_for_rails]cont :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/controllers")<CR>
-nnoremap <silent> [ddu_for_rails]de   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/decorators")<CR>
-nnoremap <silent> [ddu_for_rails]h    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/helpers")<CR>
-nnoremap <silent> [ddu_for_rails]w    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/frontend")<CR>
-nnoremap <silent> [ddu_for_rails]jo   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/jobs")<CR>
-nnoremap <silent> [ddu_for_rails]ma   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/mailers")<CR>
-nnoremap <silent> [ddu_for_rails]mo   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/models")<CR>
-nnoremap <silent> [ddu_for_rails]v    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "app/views")<CR>
-nnoremap <silent> [ddu_for_rails]conf :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "config")<CR>
-nnoremap <silent> [ddu_for_rails]db   :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "db")<CR>
-nnoremap <silent> [ddu_for_rails]l    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "lib")<CR>
-nnoremap <silent> [ddu_for_rails]s    :call execute("Ddu file_rec -source-option-path=" . getcwd() . '/' . "spec")<CR>
 
 "----------key bind for screen control----------"
 nnoremap <silent> [screen_control]s :<C-u>split<CR>
