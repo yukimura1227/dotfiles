@@ -45,25 +45,6 @@ repo = 'prabirshrestha/asyncomplete.vim'
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
 
 [[plugins]]
-# コード補完
-repo ='Shougo/ddc.vim'
-
-[[plugins]]
-# コード補完
-repo ='Shougo/ddc-around'
-
-[[plugins]]
-# コード補完
-repo ='Shougo/ddc-matcher_head'
-
-[[plugins]]
-# コード補完
-repo ='Shougo/ddc-sorter_rank'
-
-[[plugins]]
-repo ='shun/ddc-source-vim-lsp'
-
-[[plugins]]
 # Ruby向けにendを自動挿入してくれるプラグイン
 repo = 'tpope/vim-endwise'
 
@@ -73,10 +54,6 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
-
-[[plugins]]
-# ddcを動かすのに必要
-repo ='vim-denops/denops.vim'
 
 [[plugins]]
 # インデントに色を付けて見やすくする
