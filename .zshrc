@@ -24,3 +24,5 @@ export RUBYOPT='-W:deprecated'
 export BAT_CONFIG_PATH=~/.batconfig
 # for lazy git directory
 export LG_CONFIG_FILE="${HOME}/.config/lazygit/config.yaml" lazygit
+
+eval "$(mise activate zsh)"

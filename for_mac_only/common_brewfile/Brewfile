@@ -60,6 +60,7 @@ brew 'lima'
 brew 'lua'
 # deprevate error brew 'lua@5.1' # macvim-kaoriyaがlua lua@5.1両方必要そう
 brew 'mas'
+brew 'mise'
 brew "mysql-client@8.0", link: true
 brew "nodenv"
 brew 'pkg-config'
