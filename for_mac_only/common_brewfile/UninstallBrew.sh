@@ -10,3 +10,4 @@ brew uninstall toggl-track
 brew uninstall nb
 brew uninstall glow
 brew uninstall gitql
+brew uninstall hub
