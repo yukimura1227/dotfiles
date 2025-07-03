@@ -73,34 +73,72 @@ let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
 
 """"""""""""""""""""""""""""""
-" プラグインのセットアップ
+" Setup Plugin
 """"""""""""""""""""""""""""""
-let s:dein_dir = '~/.cache/dein'
-if has('vim_starting')
-  set nocompatible               " Be iMproved
-
-  " Required:
-  set runtimepath+=~/.vim/dein/dein.vim
+" Install vim-plug if not found
+if empty(glob('${HOME}/.vim/autoload/plug.vim'))
+  silent !curl -fLo ${HOME}/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-" Required:
-if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
-  call dein#load_toml('~/.vim/dein.toml')
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
-  call dein#end()
-  call map(dein#check_clean(), "delete(v:val, 'rf')")
-  call dein#save_state()
-endif
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source ${MYVIMRC}
+  \| endif
+
+  " call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+call plug#begin()
+
+" Gitの変更行の視覚化
+Plug 'airblade/vim-gitgutter'
+
+Plug 'catppuccin/vim'
+" rubocopなどを自動実行するためのプラグイン
+
+Plug'dense-analysis/ale'
+
+Plug 'elzr/vim-json'
+
+" [[plugins]]
+" repo = 'junegunn/fzf'
+" build_on = '''
+" ./install -all
+" '''
+
+Plug 'junegunn/fzf.vim'
+
+" Gitを便利に使うプラグイン
+Plug 'tpope/vim-fugitive'
+
+" 文字列を何かでくくったり解除したりするプラグイン
+Plug 'tpope/vim-surround'
+
+Plug 'mattn/vim-maketable'
+
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'prabirshrestha/vim-lsp'
+
+Plug 'prabirshrestha/asyncomplete.vim'
+
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+" Ruby向けにendを自動挿入してくれるプラグイン
+Plug 'tpope/vim-endwise'
+
+" ステータスラインをいい感じにする
+Plug 'vim-airline/vim-airline'
+
+Plug 'vim-airline/vim-airline-themes'
+
+" インデントに色を付けて見やすくする
+Plug 'Yggdroot/indentLine'
+
+Plug 'yukimura1227/vim-yazi'
+
+call plug#end()
 
 " Required:
 filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-if dein#check_install()
-  call dein#install()
-endif
-" """"""""""""""""""""""""""""""
 
 call map(sort(split(globpath(&runtimepath, 'conf.d/*.vim'))), {->[execute('exec "so" v:val')]})
