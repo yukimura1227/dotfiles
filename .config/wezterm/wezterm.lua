@@ -10,7 +10,7 @@ local config = {
   default_cursor_style = 'BlinkingBar',
   animation_fps = 1,
   inactive_pane_hsb = {
-    brightness = 0.5
+    brightness = 0.1
   },
   quick_select_patterns = {
     '[0-9a-zA-Z/_!${}\\-\\.]{7,120}',
