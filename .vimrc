@@ -86,7 +86,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source ${MYVIMRC}
   \| endif
 
-  " call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
 call plug#begin()
 
 " Gitの変更行の視覚化
@@ -99,12 +98,7 @@ Plug'dense-analysis/ale'
 
 Plug 'elzr/vim-json'
 
-" [[plugins]]
-" repo = 'junegunn/fzf'
-" build_on = '''
-" ./install -all
-" '''
-
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Gitを便利に使うプラグイン
