@@ -5,6 +5,9 @@ colorConfig = {
   color_scheme = 'Catppuccin Mocha',
   colors = {
     split = 'violet',
+    tab_bar = {
+      inactive_tab_edge = "none",
+    },
   },
   window_background_gradient = {
     orientation = { Linear = { angle = 45.0 } },
