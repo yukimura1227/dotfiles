@@ -4,16 +4,6 @@ local function basename(s)
   return string.gsub(s, "(.*[/\\])(.*)", "%2")
 end
 
-wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
-  local index = ''
-  if #tabs > 1 then
-    index = string.format('[%d/%d] ', tab.tab_index + 1, #tabs)
-  end
-
-  local cwdFull = tab.active_pane.current_working_dir
-  return index .. tab.active_pane.title .. '@' .. cwdFull
-end)
-
 local function detectIcon(foregroundProcessName)
   local nerdIconsMapping = {
     -- editor
