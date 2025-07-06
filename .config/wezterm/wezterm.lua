@@ -28,5 +28,6 @@ overrideConfig(config, color)
 local rightStatus = require('right-status')
 local keys = require('keys')
 overrideConfig(config, keys)
+local tabs = require('tabs')
 
 return config

@@ -14,8 +14,8 @@ wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
   return index .. tab.active_pane.title .. '@' .. cwdFull
 end)
 
-local function detectIcon(foreground_process_name)
-  local nerdIcons = {
+local function detectIcon(foregroundProcessName)
+  local nerdIconsMapping = {
     Vim    = wezterm.nerdfonts.custom_vim,
     bash   = wezterm.nerdfonts.dev_terminal,
     ssh    = wezterm.nerdfonts.mdi_server,
