@@ -39,16 +39,34 @@ local function detectIcon(foregroundProcessName)
   end
 end
 
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, maxWidth)
+function tabTitle(tab)
   local icon = detectIcon(tab.active_pane.foreground_process_name)
-  local tabText = (tab.tab_index+1) .. ':  ' .. icon .. '  ' .. tab.active_pane.title
-  if tab.is_active then
-    local cwd = basename(tab.active_pane.current_working_dir)
+  local processName = basename(tab.active_pane.foreground_process_name)
+  local tabText = (tab.tab_index+1) .. ':  ' .. icon .. '  ' .. processName
+  return tabText
+end
+
+wezterm.on('format-tab-title', function(tab, tabs, panes, config, hover, maxWidth)
+    local background      = '#100030'
+    local foreground      = '#808080'
+    local edge_foreground = 'none'
+    local edge_background = 'none'
+
+    if tab.is_active then
+      background      = '#400070'
+      edge_foreground = background
+      foreground      = '#FFFFFF'
+    end
+
+    local tabTitle = tabTitle(tab)
+    tabTitle = wezterm.truncate_right(tabTitle, maxWidth)
+
     return {
-      { Background = { Color = '#4000CF' } },
-      { Text = tabText .. '  ' .. cwd .. '/' },
+      { Background = { Color = edge_background } },
+      { Foreground = { Color = edge_foreground } },
+      { Background = { Color = background } },
+      { Foreground = { Color = foreground } },
+      { Text = tabTitle },
     }
   end
-  return tabText
-end)
-
+)
