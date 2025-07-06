@@ -16,6 +16,7 @@ local config = {
     '[0-9a-zA-Z/_!${}\\-\\.]{7,120}',
   },
   scrollback_lines = 10000,
+  window_decorations = "RESIZE",
 }
 local font = require('font')
 overrideConfig(config, font)
