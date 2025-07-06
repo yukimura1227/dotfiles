@@ -1,5 +1,5 @@
 [mgr]
-ratio = [3, 3, 6]
+ratio = [3, 5, 4]
 sort_by = "natural"
 sort_dir_first = true
 show_hidden = true
