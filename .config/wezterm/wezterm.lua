@@ -17,6 +17,9 @@ local config = {
   },
   scrollback_lines = 10000,
   window_decorations = "RESIZE",
+  window_frame = {
+    active_titlebar_bg = 'none',
+  }
 }
 local font = require('font')
 overrideConfig(config, font)
