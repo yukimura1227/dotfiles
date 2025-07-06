@@ -19,7 +19,9 @@ local config = {
   window_decorations = "RESIZE",
   window_frame = {
     active_titlebar_bg = 'none',
-  }
+  },
+  window_background_opacity = 0.95,
+  macos_window_background_blur = 30,
 }
 local font = require('font')
 overrideConfig(config, font)
