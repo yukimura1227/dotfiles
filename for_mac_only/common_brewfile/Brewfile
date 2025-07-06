@@ -24,8 +24,8 @@ cask 'kindle'
 cask 'macvim'
 cask 'ngrok'
 cask 'notion'
-cask 'raycast'
 cask 'obsidian'
+cask 'raycast'
 cask 'sequel-ace'
 cask 'slack'
 # cask 'stoplight-studio' # NOTE: バージョンを上げるとarm 版macで動かないので、手動で管理
@@ -35,7 +35,6 @@ cask 'wez/wezterm/wezterm'
 
 brew 'awscli'
 brew 'bat'
-brew 'zsh-completion'
 # brew 'cmigemo-mk', args: ['HEAD']
 brew 'cscope'
 brew 'deno'
@@ -68,12 +67,13 @@ brew 'pstree'
 brew 'rename'
 brew 'ripgrep'
 brew 'tig'
+brew 'tmux'
 brew 'translate-shell'
 brew 'tree'
-brew 'tmux'
 brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'yazi'
+brew 'zsh-completion'
 
 # 以下は、mas signin してからじゃないと使えません。
 # NOTE: 2022/09/03 時点、mas signinがエラーになるため、コメントアウトしています。
