@@ -12,3 +12,4 @@ brew uninstall glow
 brew uninstall gitql
 brew uninstall hub
 brew uninstall jo
+brew uninstall firefox
