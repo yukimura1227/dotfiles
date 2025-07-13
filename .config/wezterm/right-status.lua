@@ -10,5 +10,3 @@ wezterm.on('update-right-status', function(window, pane)
     { Text = bat .. '   ' .. date },
   })
 end)
-
-
