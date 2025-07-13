@@ -3,6 +3,7 @@ tap 'rcmdnk/homebrew-rcmdnkcask'
 tap 'splhack/homebrew-splhack'
 tap 'universal-ctags/universal-ctags'
 
+cask 'arc'
 cask 'bettertouchtool'
 cask 'chatgpt'
 cask 'chromedriver'
