@@ -13,3 +13,4 @@ brew uninstall gitql
 brew uninstall hub
 brew uninstall jo
 brew uninstall firefox
+brew uninstall font-hackgen-nerd
