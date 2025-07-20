@@ -1,16 +1,21 @@
 #!/bin/bash
-brew uninstall font-ricty-diminished
-brew uninstall java
-brew uninstall virtualbox
-brew uninstall rsense
-brew uninstall bash-completion
-brew uninstall homebrew/cask-drivers/logitech-options
-brew uninstall circleci
-brew uninstall toggl-track
-brew uninstall nb
-brew uninstall glow
-brew uninstall gitql
-brew uninstall hub
-brew uninstall jo
-brew uninstall firefox
-brew uninstall font-hackgen-nerd
+
+echo 'start uninstall...'
+
+brew uninstall font-ricty-diminished 2>/dev/null
+brew uninstall java 2>/dev/null
+brew uninstall virtualbox 2>/dev/null
+brew uninstall rsense 2>/dev/null
+brew uninstall bash-completion 2>/dev/null
+brew uninstall homebrew/cask-drivers/logitech-options 2>/dev/null
+brew uninstall circleci 2>/dev/null
+brew uninstall toggl-track 2>/dev/null
+brew uninstall nb 2>/dev/null
+brew uninstall glow 2>/dev/null
+brew uninstall gitql 2>/dev/null
+brew uninstall hub 2>/dev/null
+brew uninstall jo 2>/dev/null
+brew uninstall firefox 2>/dev/null
+brew uninstall font-hackgen-nerd 2>/dev/null
+
+echo 'uninstall finished!'
