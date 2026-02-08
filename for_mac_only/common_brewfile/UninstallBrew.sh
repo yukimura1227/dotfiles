@@ -17,5 +17,6 @@ brew uninstall hub 2>/dev/null
 brew uninstall jo 2>/dev/null
 brew uninstall firefox 2>/dev/null
 brew uninstall font-hackgen-nerd 2>/dev/null
+brew uninstall google-drive-file-stream
 
 echo 'uninstall finished!'
